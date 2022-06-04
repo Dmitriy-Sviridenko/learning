@@ -160,3 +160,119 @@ body {
 .header-button:hover{
     background-color: rgb(248, 159, 26);
 }
+
+.cards-holder{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 10px 10px 40px 20px #0000001A;
+    width: 349px;
+    margin-right: 31px;
+    background-color: #FFFFFF;
+    margin-top: -80px;
+    padding: 10px 10px;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 31px;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.card-title span{
+    color: #BC9060;
+}
+.card-desc{
+    text-align: center; 
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 26px;
+    color: #656363;
+}
+
+.history{
+    margin-top: 166px;
+}
+
+.history-title{
+    font-family: 'Tinos';
+    font-weight: 400;
+    font-size: 54px;
+    text-align: center;
+    width: 444px;
+    margin-top: 21px;
+}
+
+.history-title span{
+    color: #BC9060;
+}
+
+.history-desc{
+    
+    font-size: 16px;
+    color: #656363;
+    text-align: center;
+    width: 444px;
+}
+
+.history-number{
+    display: flex;
+    width: 444px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.number-item{
+    margin-right: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: #BC9060;
+}
+
+.number-item span{
+    display: block;
+    color: #000000;
+    font-size: 20px;
+}
+
+.history-images{
+    position: relative;
+}
+
+.history-holder{
+    display: flex;
+    justify-content: space-between;
+}
+
+.images-1{
+    position:absolute;
+    z-index: 0;
+    top: 44px;
+    left: -570px;
+}
+
+.images-2{
+    position:absolute;
+    z-index: 1;
+    top: -10px;
+    left: -350px;
+}
+
+.images-3{
+    position:absolute;
+    z-index: 12;
+    top: 205px;
+    left: -200px;
+}
