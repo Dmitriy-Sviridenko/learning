@@ -3,7 +3,9 @@
 }
 
 .container {
-    width: 1200px;
+    max-width: 1230px;
+    width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -235,7 +237,7 @@ p {
 
 .info__text{
     color: #B7B7B7;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* info end */
@@ -388,7 +390,7 @@ p {
     text-decoration: none;
 }
 
-.about_inch{
+.about_img{
     height: 340px;
 }
 
