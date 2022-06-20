@@ -3,3 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: "Work Sans", sans-serif;
+    background-color: #010208;
+}
+
+.container {
+    max-width: 1245px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #fff;
+}
+
