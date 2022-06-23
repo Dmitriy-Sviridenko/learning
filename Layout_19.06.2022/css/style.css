@@ -25,7 +25,7 @@ body{
     z-index: 5;
     background-color: #010208;
 }
-.container {
+.header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,4 +109,36 @@ body{
     bottom: 42px;
     transform: translateX(-50%);
     cursor: pointer;
+}
+
+.clients {
+    padding-top: 80px ;
+    padding-bottom: 130px;
+    
+}
+
+.container {
+    
+}
+.clients__title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%;
+    color: #fff;
+    max-width: 520px;
+}
+
+.clients__title span {
+    color: rgba(227, 228, 230, 0.55);
+    font-weight: 300;
+}
+
+.clients__body {
+    margin-top: 95px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.clients__item {
 }
