@@ -46,6 +46,15 @@ body{
     transform: translateX(0);
 }
 
+.menu__link.active{
+    color: #BC3CD8;
+}
+
+.menu__link.active::before{
+    opacity: 1;
+    visibility: visible;
+}
+
 .menu__link:hover  {
     color: #BC3CD8;
     transition:  0.5s ease;
@@ -425,6 +434,10 @@ body{
 
 /* footer end */
 
+.works, .about {
+    scroll-margin-top: 30px;
+}
+
 @media (max-width: 992px ) {
     
     .about__container {
@@ -460,6 +473,10 @@ body{
         display: block;
         align-items: center;
         text-align: center;
+    }
+
+    .works, .about {
+        scroll-margin-top: 70px;
     }
 
     .menu__list {
@@ -501,8 +518,6 @@ body{
         font-size: 25px;
         margin-top: 10px;
     }
-
-
 }
 
 @media (max-width: 375px ) {
