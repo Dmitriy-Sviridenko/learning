@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DSI</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -16,6 +17,18 @@
             <a href="#" class="header__logo">
                 <img src="img/header-logo.png" alt="">
             </a>
+
+            <div hidden class="header__media">
+                <a href="#" class="header__logo_media">
+                    <img src="img/header-logo.png" alt="">
+                </a>
+
+                <div class="header__icons_media">
+                    <a href="#" class="header__img"><img src="img/home.svg" alt=""></a>
+                    <a href="#" class="header__img"><img src="img/mail.svg" alt=""></a>
+                    <a href="#" class="header__img"><img src="img/arrows.svg" alt=""></a>
+                </div>
+            </div>
 
             <nav class="header__menu">
                 <ul class="menu__list">
@@ -40,7 +53,7 @@
     </header>
     <!-- header -->
 
-    <div class="hero">
+    <div hidden class="hero">
         <div class="container hero__container">
             <div class="hero__info">
                 <h1 class="hero__title">
@@ -65,7 +78,7 @@
     </div>
     <!-- hero -->
 
-    <div class="about">
+    <div hidden class="about">
         <div class="container about_container">
 
             <img src="img/about.png" alt="" class="about__image">
@@ -98,7 +111,7 @@
     </div>
     <!-- about -->
 
-    <div class="products">
+    <div hidden class="products">
         <div class="container products_container">
             <h2 class="products__title">
                 Product and Service
@@ -164,7 +177,7 @@
     </div>
     <!-- products -->
 
-    <div class="contacts">
+    <div hidden class="contacts">
         <div class="container contacts_container">
             <div class="contacts__adress">
                 <img src="img/header-logo.png" alt="">
@@ -203,13 +216,14 @@
     </div>
     <!-- contacts -->
 
-<footer class="footer">
+    <footer hidden class="footer">
     <div class="container footer_container">
         <div class="copyright">
             Copyright © 2015 - Dwidasa Samsara Indonesia
         </div>
     </div>
 </footer>
+    <!-- footer -->
 
 </body>
 </html>
