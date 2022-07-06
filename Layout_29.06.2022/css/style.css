@@ -155,7 +155,7 @@ header{
 .about {
     margin-top: 150px;
 }
-.about_container {
+.about__container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -167,6 +167,7 @@ header{
 
 .about__info {
     width: 45%;
+    margin-right: 100px;
 }
 
 .about__title {
