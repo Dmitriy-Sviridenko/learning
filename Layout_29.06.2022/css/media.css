@@ -45,6 +45,10 @@
         margin-top: 80px; 
     }
 
+    .contacts {
+        margin-top: 80px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -113,6 +117,10 @@
         margin-top: 15px;
     }
 
+    .about__info {
+        margin-right: 0;
+    }
+
     .products__title {
         margin-top: 60px;
     }
@@ -132,6 +140,31 @@
     .products__btn{
         font-size: 14px;
     }
+
+    .contacts {
+        margin-top: 60px;
+    }
+
+    .contacts__country {
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+    .contats__info {
+        font-size: 14px;
+    }
+
+    .contacts__title {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .contacts__digital a {
+        font-size: 14px;
+    }
+
+
 }
 
 @media (max-width: 640px) {
@@ -194,6 +227,23 @@
         margin-right: auto;
     }
 
+    .contacts_container {
+        display: block;
+        text-align: center;
+    }
+
+    .contacts__title {
+        margin-top: 10px;
+    }
+    
+    .footer {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 425px){
