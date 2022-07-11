@@ -6,11 +6,14 @@
 }
 
 .block__row {
+
+    
     background-color: rgb(233, 252, 166);
     padding: 30px;
 }
 
 .block__column {
+    
     background-color: rgb(115, 185, 250);
     padding: 10px;
 }
