@@ -43,10 +43,6 @@ header{
     list-style: none;
 }
 
-.header__menu {
-
-}
-
 .menu__link {
     font-weight: 400;
     font-size: 18px;
@@ -115,22 +111,13 @@ header{
     margin-bottom: 36px;
 }
 
-.hero__button{
-    background-color: #EE4248;
-    padding: 12px 32px;
-    border-radius: 5px;
-    width: 170px;   
-    text-align: center; 
-    border: none;
-}
-
 .hero__btn {
-    font-weight: 400;
     font-size: 20px;
-    line-height: 29px;
+    padding: 12px 32px;
+    border-radius: 5px; 
     color: #FFFFFF;
+    background-color: #EE4248;
     text-decoration: none;
-    transition: 0.3 ease;
 }
 
 .hero__btn:hover{
@@ -213,33 +200,23 @@ header{
     line-height: 133.69%;
     color: #EE4248;
 }
-.products__item {
-    
-}
+
 .products__text {
     margin-top: 15px;
+    margin-bottom: 24px;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: #30444E;
-
-}
-.products__button {
-    margin-top: 15px;
-    background-color: #EE4248;
-    padding: 8px 16px;
-    border-radius: 5px;
-    width: 130px;   
-    text-align: center; 
-    border: none;
 }
 
 .products__btn {
-    font-weight: 400;
     font-size: 18px;
-    line-height: 144.69%;
     color: #FFFFFF;
     text-decoration: none;
+    background-color: #EE4248;
+    padding: 8px 16px;
+    border-radius: 5px; 
 }
 
 .products__btn:hover{
