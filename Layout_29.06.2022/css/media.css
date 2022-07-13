@@ -214,6 +214,7 @@
 
     .products__item{
         text-align: center;
+        margin-top: 30px;
     }
 
     .products__btn{
