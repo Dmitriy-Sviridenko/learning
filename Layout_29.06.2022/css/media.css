@@ -70,7 +70,7 @@
     }
    
     .menu__list {
-        margin-top: 20px;
+        margin-top: 45px;
         justify-content: space-between;
     }
 
@@ -79,7 +79,7 @@
     }
 
     .hero {
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .hero__title {
@@ -90,6 +90,7 @@
         font-size: 14px;
         margin-top: 15px;
         margin-bottom: 22px;
+        
     }
 
     .hero__btn {
@@ -129,6 +130,7 @@
 
     .products__text{
         font-size: 14px;
+        text-align: justify;
     }
     
     .products__btn{
@@ -176,6 +178,10 @@
         margin-top: 30px;
     }
 
+    .menu__list{
+        margin-top: 0px;
+    }
+
     .hero__container {
         display: block;
         text-align: center;
@@ -216,6 +222,10 @@
         display: block;
         text-align: center;
         margin-top: 30px;
+    }
+
+    .products__text {
+        text-align: center;
     }
 
     .products__btn{
