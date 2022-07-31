@@ -40,6 +40,10 @@ header{
 .header__logo {
 }
 
+.navbar {
+    display: none;
+}
+
 .menu__list {
     display: flex;
     align-items: center;
