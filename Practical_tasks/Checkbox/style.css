@@ -7,36 +7,26 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: rgb(252, 182, 182);
     color: #fff;
 }
 
-.nav-links a {
-    color: #fff;
+.nav_links a {
     text-decoration: none;
-    
 }
 
 .logo {
     font-size: 30px;
+    color: black;
 }
 
-.menu {
-    display: flex;
-    font-size: 18px;
-}
 
 .menu li {
     padding: 5px 15px;   
 }
 
-.menu li a:hover {
-    transition: all .3s;
-    color: gray;
-}
-
 #checkbox_toggle {
     display: none;
+    height: 40px;
 }
 
 .hamburger {
@@ -45,17 +35,17 @@ li {
     cursor: pointer;
 }
 
-.hamburger-line{
-    background-color: #fff;
+.hamburger_line{
+    background-color: #EE4248;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
 }
 
-.hamburger-line::before,
-.hamburger-line::after {
-    background-color: #fff;
+.hamburger_line::before,
+.hamburger_line::after {
+    background-color: #EE4248;
     content: "";
     display: block;
     position: absolute;
@@ -64,38 +54,38 @@ li {
     height: 100%;
 }
 
-.hamburger-line::before{
+.hamburger_line::before{
     top: 7px;
 }
 
-.hamburger-line::after{
+.hamburger_line::after{
     top: -7px;
 }
 
 @media (max-width: 768px){
-    .menu {
-        /* display: none; */
+    .menu__items {
+        display: none;
         max-height: 0;
         overflow: hidden;
         position: absolute;
-        background-color: gray;
+        background-color: rgb(247, 244, 244);
         text-align: center;
         right: 0;
         left: 0;
         margin-top: 20px;
     }
 
-    .menu li a {
+    .menu__items li a {
         color: rgb(68, 68, 68);
         display: block;
         padding: 15px;
     }
 
-    .menu li {
+    .menu__items li {
         transition: all .5s;
     }
 
-    .menu li:hover{
+    .menu__items li:hover{
         background-color: aquamarine;    
     }
 
@@ -104,22 +94,24 @@ li {
         padding: 20px 0s;
     }
 
-    #checkbox_toggle:checked ~ .menu {
+    #checkbox_toggle:checked ~ .menu__items {
         display: block;
         max-height: 100%;
         transition: all .5s;
     }
 
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line{
+
+
+    #checkbox_toggle:checked ~ .hamburger .hamburger_line{
         background-color: transparent;
     }
 
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line::before{
+    #checkbox_toggle:checked ~ .hamburger .hamburger_line::before{
         transform: rotate(-45deg);
         top: 0;
     }
 
-    #checkbox_toggle:checked ~ .hamburger .hamburger-line::after{
+    #checkbox_toggle:checked ~ .hamburger .hamburger_line::after{
         transform: rotate(45deg);
         top: 0;
     }
