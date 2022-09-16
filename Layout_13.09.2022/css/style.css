@@ -9,9 +9,10 @@ html{
 }
 
 body{
-    font-family: 'Lexend Zetta', sans-serif;
+    font-family: 'Lexend Zetta';
     background-color: rgb(255, 255, 255);
     color: #010208;
+    font-size: 16px;
 }
 
 .container {
@@ -56,7 +57,6 @@ header {
 
 .menu__link {
     font-family: 'Open Sans';
-    font-size: 16px;
     color: #FFFFFF;
     text-decoration: none;
     padding: 15px;    
@@ -87,17 +87,12 @@ header {
 
 .hero__text {
     font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
     line-height: 32px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFFFFF;
 }
 .hero__title {
-    font-style: normal;
-    font-weight: 400;
     font-size: 72px;
     line-height: 80px;;
     letter-spacing: -14px;
@@ -110,12 +105,11 @@ header {
 /* prevue start */
 .prevue {
     transform: translateY(-50%);
-    
 }
-.prevue__container {
+
+.prevue_container {
     max-width: 100%;
     padding: 0;
-    
 }
 .prevue__items {
     display: flex;
@@ -125,12 +119,12 @@ header {
 .prevue__card {
     text-align: center;    
 }
+
 .prevue__image {
 }
 
-.prevue__header {
+.prevue__title {
     font-family: 'Open Sans';
-    font-size: 16px;
     line-height: 32px;
     color: #333333;
 }
@@ -142,3 +136,81 @@ header {
     color: rgba(51, 51, 51, 0.496405);
 }
 /* prevue end */
+
+/* about start */
+
+.about {
+    transform: translateY(-15%);
+}
+
+.about_container {
+}
+.about__items {
+    display: flex;
+    justify-content: space-between;
+}
+.about__card {
+}
+.about_title {
+    font-family: 'Open Sans';
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.49833);
+}
+
+.about__subtitle {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -12px;
+    color: #333333;
+    margin-top: 31px;
+}
+
+.about__text {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 32px;
+    color: #333333;
+    margin-top: 31px;
+}
+.about__subcard {
+    margin-top: 41px;
+}
+
+.subcard__header {
+    font-family: 'Open Sans';
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+.subcard__text {
+    font-family: 'Open Sans';
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.496405);
+    margin-top: 5px;
+    margin-bottom: 32px;
+}
+.about__btn {
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #F07C52;
+    padding: 14px 26px;
+    
+}
+.about__img {
+}
+.about__card_right {
+}
+.card_right__text {
+}
+.card_right__author {
+}
+.card_right__img {
+}
+
+/* about end */
