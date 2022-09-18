@@ -15,6 +15,21 @@ body{
     font-size: 16px;
 }
 
+h2 {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -12px;
+    color: #333333;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.49833);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,10 +42,10 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    margin-top: 10px;
 }
 
 .header__container {
-    padding-top: 25px;
 }
 
 .navbar {
@@ -72,6 +87,7 @@ header {
 
 /* header end */
 
+
 /* hero start */
 
 .hero {
@@ -102,7 +118,9 @@ header {
 
 /* hero end */
 
+
 /* prevue start */
+
 .prevue {
     transform: translateY(-50%);
 }
@@ -145,25 +163,20 @@ header {
 
 .about_container {
 }
+
 .about__items {
     display: flex;
     justify-content: space-between;
 }
 .about__card {
+    max-width: 50%;
 }
+
 .about_title {
-    font-family: 'Open Sans';
-    line-height: 32px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(51, 51, 51, 0.49833);
 }
 
 .about__subtitle {
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: -12px;
-    color: #333333;
+    transform: translateX(-2%);
     margin-top: 31px;
 }
 
@@ -184,6 +197,7 @@ header {
     line-height: 32px;
     color: #333333;
 }
+
 .subcard__text {
     font-family: 'Open Sans';
     line-height: 32px;
@@ -191,26 +205,54 @@ header {
     margin-top: 5px;
     margin-bottom: 32px;
 }
+
 .about__btn {
-    line-height: 20px;
-    text-align: center;
     letter-spacing: -3px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #F07C52;
+    border: 1px solid #F07C52;
     text-decoration: none;
-    background-color: #F07C52;
     padding: 14px 26px;
-    
 }
+
+.about__btn:hover{
+    background-color: #F07C52;
+    color: #FFFFFF; 
+    transition: ease 0.3s;
+}
+
 .about__img {
+    max-height: 592px;
+    max-width: 470px;   
 }
+
+.about__card {
+   
+}
+
 .about__card_right {
+    transform: translateY(-127%) translateX(-37%);
+    max-height: 388px;
+    max-width: 270px;
+    padding: 34px 35px 0 35px;
+    background-color: #F07C52;
 }
+
 .card_right__text {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
 }
+
 .card_right__author {
+    font-family: 'Open Sans'; 
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.502972);
+    margin-top: 12px;
 }
 .card_right__img {
+    margin-top: 16px;
 }
 
 /* about end */
