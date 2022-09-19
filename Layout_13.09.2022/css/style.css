@@ -13,6 +13,7 @@ body{
     background-color: rgb(255, 255, 255);
     color: #010208;
     font-size: 16px;
+    line-height: 32px;
 }
 
 h2 {
@@ -24,7 +25,6 @@ h2 {
 
 h3 {
     font-family: 'Open Sans';
-    line-height: 32px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(51, 51, 51, 0.49833);
@@ -103,7 +103,6 @@ header {
 
 .hero__text {
     font-family: 'Open Sans';
-    line-height: 32px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -143,7 +142,6 @@ header {
 
 .prevue__title {
     font-family: 'Open Sans';
-    line-height: 32px;
     color: #333333;
 }
 
@@ -158,7 +156,7 @@ header {
 /* about start */
 
 .about {
-    transform: translateY(-15%);
+    margin-top: -80px;
 }
 
 .about_container {
@@ -183,7 +181,6 @@ header {
 .about__text {
     font-family: 'Open Sans';
     font-size: 20px;
-    line-height: 32px;
     color: #333333;
     margin-top: 31px;
 }
@@ -194,13 +191,11 @@ header {
 .subcard__header {
     font-family: 'Open Sans';
     font-size: 24px;
-    line-height: 32px;
     color: #333333;
 }
 
 .subcard__text {
     font-family: 'Open Sans';
-    line-height: 32px;
     color: rgba(51, 51, 51, 0.496405);
     margin-top: 5px;
     margin-bottom: 32px;
@@ -231,6 +226,7 @@ header {
 }
 
 .about__card_right {
+    position: absolute;
     transform: translateY(-127%) translateX(-37%);
     max-height: 388px;
     max-width: 270px;
@@ -241,13 +237,11 @@ header {
 .card_right__text {
     font-family: 'Open Sans';
     font-size: 20px;
-    line-height: 32px;
     color: #fff;
 }
 
 .card_right__author {
     font-family: 'Open Sans'; 
-    line-height: 32px;
     color: rgba(255, 255, 255, 0.502972);
     margin-top: 12px;
 }
@@ -256,3 +250,65 @@ header {
 }
 
 /* about end */
+
+/* exclusive start */
+
+.exclusive {
+    margin-top: 208px;
+    padding: 75px 0 114px 0;
+    background-color: rgba(254, 114, 84, 0.08);
+}
+.container {
+
+}
+.exclusive_container {
+}
+.exclusive__title {
+    text-align: center;
+}
+.exclusive__subtitle {
+    text-align: center;
+    margin-top: 34px;
+}
+.exclusive__cards {
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+.exclusive__item {
+    
+}
+.exclusive__img {
+
+}
+
+.exclusive__price {
+    position: absolute;
+    transform: translateY(-129%) translateX(11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Zetta';
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -8px;
+    color: #FFFFFF;
+    background-color: #F07C52;
+    width: 144px;
+    height: 144px;
+    border-radius: 100%;
+}
+.exclusive__text {
+    margin-top: 13px;
+    font-family: 'Lexend Zetta';
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -8px;
+    color: #000000;
+}
+.exclusive__subtext {
+    font-family: 'Open Sans';
+    color: rgba(0, 0, 0, 0.502972);
+}
+
+/* exclusive end */
