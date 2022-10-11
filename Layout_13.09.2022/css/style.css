@@ -551,8 +551,7 @@ header {
     height: 16px;
     width: 16px;
     margin-left: 16px;
-
-  }
+}
 
 
 .testimonials__circle::before{
@@ -569,3 +568,103 @@ header {
 }
 
 /* testimonials end */
+
+/* newsletter start */
+.newsletter {
+    background-color: #152a3f;
+    margin-top: 128px
+}
+.newsletter__container {
+   padding-top: 32px;
+}
+.newsletter__title {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.500821);
+}
+
+.subtitle__container {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter__subtitle {
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: -12px;
+    color: #FFFFFF;
+    margin-left: -10px;
+}
+
+.newsletter__btn-container{
+    
+}
+
+.newsletter__btn {
+    padding: 14px 35px;
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.newsletter__btn:hover{
+    background-color: #52AA7F;
+    border: 1px solid #52AA7F;
+    transition: ease 0.3s;
+}
+
+.newsletter__cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 69px;  
+}
+.newsletter__card {
+    position: relative;
+    max-width: 570px;
+    width: 49%;
+    background-color: #fff;
+}
+.newsletter__card-content {
+    display: flex;
+    padding: 26px 48px;
+}
+.newsletter__info {
+}
+.newsletter__date {
+    font-family: 'Open Sans';
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 0.49833);
+}
+.newsletter__comment {
+    margin-top: 13px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    color: #333333;
+}
+.newsletter__author {
+    margin-top: 19px;
+    font-family: 'Open Sans';
+    color: rgba(51, 51, 51, 0.496405);
+}
+.newsletter__author-image {
+    max-width: 64px;
+    max-height: 64px;
+}
+.newsletter__image {
+    margin-top: 38px;
+    max-width: 570px;
+    max-height: 336px;
+}
+
+/* newsletter end */
