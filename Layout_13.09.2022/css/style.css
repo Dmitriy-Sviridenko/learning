@@ -226,8 +226,13 @@ header {
 }
 
 .about__img {
-    max-height: 592px;
-    max-width: 470px;   
+
+}
+
+.about__img img{
+    height: 592px;
+    width: 470px; 
+    object-fit: cover;  
 }
 
 .about__card {
@@ -254,8 +259,14 @@ header {
     color: rgba(255, 255, 255, 0.502972);
     margin-top: 12px;
 }
+
 .card_right__img {
-    margin-top: 16px;
+    height: 198px;
+    width: 196px;
+    object-fit: fill;
+}
+
+.card_right__img img {
 }
 
 /* about end */
