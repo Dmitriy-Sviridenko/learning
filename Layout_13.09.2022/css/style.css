@@ -468,17 +468,20 @@ header {
     max-width: 41%;
 }
 
-.features__img {
+.features__img_main {
     width: 470px;
     height: 592px;
 }
 
 .features__img_right {
     position: absolute;
-    max-width: 305px;
-    max-height: 438px;
-    transform: translateY(18%) translateX(-50%);
+    width: 305px;
+    height: 438px;
+    object-fit: cover;
+    transform: translateY(-119%) translateX(93%)
 }
+
+
 
 .features__title {
 }
@@ -577,12 +580,16 @@ header {
     margin-top: 50px;
 }
 
-.testimonials__img {
+.testimonials__img img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
 }
 
 .testimonials__about{
     display: block;
     margin-left: 24px;
+    
 }
 
 .testimonials__name {
@@ -632,7 +639,8 @@ header {
 /* newsletter start */
 .newsletter {
     background-color: #152a3f;
-    margin-top: 128px
+    margin-top: 128px;
+    padding-bottom: 100px;
 }
 
 .newsletter__container {
@@ -646,6 +654,7 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.500821);
+    
 }
 
 .subtitle__container {
@@ -692,13 +701,13 @@ header {
 
 .newsletter__card {
     position: relative;
-    max-width: 570px;
-    width: 49%;
+    width: 570px;
     background-color: #fff;
 }
 
 .newsletter__card-content {
     display: flex;
+    align-items: center;
     padding: 26px 48px;
 }
 
@@ -725,15 +734,21 @@ header {
     color: rgba(51, 51, 51, 0.496405);
 }
 
-.newsletter__author-image {
-    max-width: 64px;
-    max-height: 64px;
+.newsletter__image_author img{
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
 }
 
-.newsletter__image {
-    margin-top: 38px;
-    max-width: 570px;
-    max-height: 336px;
+.newsletter__image_main {
+    height: 336px;
+    width: 570px;
+}
+
+.newsletter__image_main img {
+    height: 336px;
+    width: 570px;
+    object-fit: cover;
 }
 
 /* newsletter end */
