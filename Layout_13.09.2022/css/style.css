@@ -68,6 +68,10 @@ header {
 
 .menu__items {
     display: flex;
+   
+}
+
+.menu__items li{
     list-style-type: none;
 }
 
@@ -424,7 +428,7 @@ header {
 
 .adventures__img img {
     height: 176px;
-    width: 270px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -640,7 +644,6 @@ header {
 .newsletter {
     background-color: #152a3f;
     margin-top: 128px;
-    padding-bottom: 100px;
 }
 
 .newsletter__container {
@@ -742,13 +745,110 @@ header {
 
 .newsletter__image_main {
     height: 336px;
-    width: 570px;
 }
 
 .newsletter__image_main img {
     height: 336px;
-    width: 570px;
+    width: 100%;
     object-fit: cover;
 }
 
 /* newsletter end */
+
+/* feedback start */
+.feedback {
+    background-color: #152a3f;
+    padding-top: 89px;
+}
+.container {
+}
+.feedback__container {
+    display: flex;
+    align-items: center;
+}
+.feedback__titles {
+}
+.feedback__title {
+    margin-left: -6px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -8px;
+    color: #FFFFFF;
+}
+
+.feedback__subtitle {
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 0.502972);
+}
+
+.feedback__form {
+    display: flex;
+    align-items: center;
+}
+
+.feedback__email {
+    position: relative;
+    padding: 5px 10px;
+    background-color: #fff;
+}
+
+.feedback__input {
+    width: 250px;
+    height: 38px;
+    border: 0ch;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.feedback__input:focus {
+    outline: none;
+}
+
+.feedback__label {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 32px;
+    color: rgba(51, 51, 51, 0.496405);
+    pointer-events: none;
+}
+
+.feedback__input:focus + .feedback__label {
+    display: none;   
+}
+
+.feedback__input:not(:placeholder-shown) + .feedback__label {
+    transform: translateY(-15px);
+    font-size: 12px;
+} 
+
+.feedback__btn-container {
+    padding: 0 30px;
+}
+
+.feedback__btn {
+    padding: 14px 35px;
+    border: 1px solid #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.feedback__btn:hover{
+    background-color: #52AA7F;
+    border: 1px solid #52AA7F;
+    transition: ease 0.3s;
+}
+
+
+
+
+/* feedback end */
