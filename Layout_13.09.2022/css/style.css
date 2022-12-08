@@ -759,26 +759,34 @@ header {
 .feedback {
     background-color: #152a3f;
     padding-top: 89px;
+    
+    
 }
-.container {
-}
+
 .feedback__container {
     display: flex;
     align-items: center;
+    justify-content: space-between; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+    padding-bottom: 86px;
 }
+
+
 .feedback__titles {
 }
+
 .feedback__title {
     margin-left: -6px;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -8px;
     color: #FFFFFF;
+    
 }
 
-.feedback__subtitle {
-    font-size: 16px;
-    line-height: 32px;
+.feedback__text {
+    font-family: 'Open Sans';
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.502972);
 }
 
@@ -806,32 +814,21 @@ header {
     outline: none;
 }
 
-.feedback__label {
+.feedback__input::placeholder {
     position: absolute;
     top: 8px;
-    left: 16px;
-    font-family: 'Open Sans';
     font-size: 16px;
     line-height: 32px;
     color: rgba(51, 51, 51, 0.496405);
     pointer-events: none;
 }
 
-.feedback__input:focus + .feedback__label {
-    display: none;   
-}
-
-.feedback__input:not(:placeholder-shown) + .feedback__label {
-    transform: translateY(-15px);
-    font-size: 12px;
-} 
-
 .feedback__btn-container {
     padding: 0 30px;
 }
 
 .feedback__btn {
-    padding: 14px 35px;
+    padding: 13px 35px;
     border: 1px solid #FFFFFF;
     font-size: 16px;
     line-height: 20px;
