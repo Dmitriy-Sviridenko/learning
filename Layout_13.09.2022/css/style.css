@@ -46,9 +46,6 @@ header {
     margin-top: 10px;
 }
 
-.header__container {
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -64,32 +61,26 @@ header {
 }
 
 .nav__links {
-}
-
-.menu__items {
     display: flex;  
+    align-items: center;
 }
-
-.menu__items li{
-    list-style-type: none;
-}
-
-
 
 .menu__link {
-    padding: 15px;    
+    padding: 15px 21px;    
     margin-left: 50px;
     font-family: 'Open Sans';
     color: #FFFFFF;
     text-decoration: none;
 }
 
+.nav__links a:first-child{
+    margin-left: 0px;
+}
 
 .menu__link:hover{
+    padding: 14px 20px;
     border: 1px solid;
-    font-family: 'Lexend Zetta';
-    text-transform: uppercase;
-    transition: ease 0.3s;
+    /* transition: ease 0.3s; */
 }
 /* header end */
 
