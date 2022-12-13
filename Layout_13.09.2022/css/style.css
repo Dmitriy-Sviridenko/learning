@@ -112,21 +112,19 @@ header {
 }
 /* hero end */
 
-
 /* prevue start */
 .prevue {
     transform: translateY(-44%);
-}
-
-.prevue_container {
     max-width: 100%;
     padding: 0;
 }
+
 .prevue__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .prevue__card {
     text-align: center;    
 }
@@ -162,9 +160,6 @@ header {
 /* about start */
 .about {
     margin-top: -80px;
-}
-
-.about_container {
 }
 
 .about__items {
@@ -276,12 +271,6 @@ header {
     background-color: rgba(254, 114, 84, 0.08);
 }
 
-.container {
-}
-
-.exclusive_container {
-}
-
 .exclusive__title {
     text-align: center;
 }
@@ -313,13 +302,8 @@ header {
 .exclusive__price {
     position: absolute;
     transform: translateY(-129%) translateX(11%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 144px;
-    height: 144px;
+    padding: 48px 28px 48px 22px;
     border-radius: 100%;
-    font-family: 'Lexend Zetta';
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -8px;
@@ -329,7 +313,6 @@ header {
 
 .exclusive__text {
     margin: 13px 0px 0px -7px;
-    font-family: 'Lexend Zetta';
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -8px;
@@ -345,12 +328,6 @@ header {
 /* adventures start */
 
 .adventures {
-}
-
-.container {
-}
-
-.container_adventures {
 }
 
 .adventures__title {
@@ -450,12 +427,6 @@ header {
     margin-top: 192px;
 }
 
-.contaner {
-}
-
-.features_container {
-}
-
 .features__items {
     display: flex;
     justify-content: space-between;
@@ -477,8 +448,6 @@ header {
     object-fit: cover;
     transform: translateY(-119%) translateX(93%)
 }
-
-
 
 .features__title {
 }
@@ -509,9 +478,6 @@ header {
     color: #333333;
 }
 
-.features__btn-container{
-}
-
 .features__btn {
     padding: 14px 26px;
     border: 1px solid #F07C52;
@@ -533,12 +499,6 @@ header {
     margin-top: 203px;
 }
 
-.container {
-}
-
-.testimonials_container {
-}
-
 .testimonials__title {
     text-align: center;
 }
@@ -552,10 +512,6 @@ header {
     display: flex;
     justify-content: space-around;
     margin-top: 64px;
-}
-
-.testimonials__card {
-    
 }
 
 .testimonials__comma {
@@ -617,7 +573,6 @@ header {
     margin-left: 16px;
 }
 
-
 .testimonials__circle::before{
     display: block;
     content: "";
@@ -650,7 +605,6 @@ header {
     letter-spacing: 3px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.500821);
-    
 }
 
 .subtitle__container {
@@ -666,9 +620,6 @@ header {
     line-height: 64px;
     letter-spacing: -12px;
     color: #FFFFFF;
-}
-
-.newsletter__btn-container{
 }
 
 .newsletter__btn {
@@ -705,9 +656,6 @@ header {
     display: flex;
     align-items: center;
     padding: 26px 48px;
-}
-
-.newsletter__info {
 }
 
 .newsletter__date {
@@ -762,17 +710,12 @@ header {
     padding-bottom: 86px;
 }
 
-
-.feedback__titles {
-}
-
 .feedback__title {
     margin-left: -6px;
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -8px;
     color: #FFFFFF;
-    
 }
 
 .feedback__text {
@@ -844,11 +787,6 @@ header {
     padding-top: 111px;
     padding-bottom: 160px;
 }
-.container {
-}
-.contact__container {
-
-}
 
 .contact__items {
     display: flex;
@@ -905,11 +843,8 @@ header {
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
-
-
 
 .contact__email {
     font-family: 'Open Sans';
@@ -953,9 +888,6 @@ header {
     padding-top: 57px;
 }
 
-.container {
-}
-
 .bottom__container {
     display: flex;
     justify-content: space-between;
@@ -970,8 +902,6 @@ header {
     letter-spacing: -8px;
     color: #FFFFFF;
     text-decoration: none;
-}
-.bottom__card {
 }
 
 .bottom__title {
