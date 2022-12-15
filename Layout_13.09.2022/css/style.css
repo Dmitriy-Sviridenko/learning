@@ -37,6 +37,7 @@ h3 {
     padding: 0 15px;
 }
 
+
 /* header start */
 
 header {
@@ -46,7 +47,7 @@ header {
     margin-top: 10px;
 }
 
-.navbar {
+.header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,9 +61,18 @@ header {
     text-decoration: none;
 }
 
-.nav__links {
-    display: flex;  
+.header__nav {
+
+}
+
+.nav__list{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.nav__item {
+   list-style: none; 
 }
 
 .menu__link {
@@ -71,10 +81,6 @@ header {
     font-family: 'Open Sans';
     color: #FFFFFF;
     text-decoration: none;
-}
-
-.nav__links a:first-child{
-    margin-left: 0px;
 }
 
 .menu__link:hover{
