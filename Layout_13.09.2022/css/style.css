@@ -68,16 +68,18 @@ header {
 .nav__list{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .nav__item {
    list-style: none; 
 }
 
-.menu__link {
+.nav__item:not(:last-child){
+    margin-right: 50px;
+}
+
+.nav__link {
     padding: 15px 21px;    
-    margin-left: 50px;
     font-family: 'Open Sans';
     color: #FFFFFF;
     text-decoration: none;
@@ -97,9 +99,6 @@ header {
     padding-top: 221px;
     padding-bottom: 370px;
     background-color: #6347F9;
-}
-
-.hero__container {
 }
 
 .hero__text {
@@ -598,10 +597,7 @@ header {
 .newsletter {
     background-color: #152a3f;
     margin-top: 128px;
-}
-
-.newsletter__container {
-   padding-top: 32px;
+    padding-top: 32px;
 }
 
 .newsletter__title {
