@@ -1,8 +1,5 @@
-const bodyElement = document.body;
+const elemsOne = document.querySelectorAll(".lesson .lesson__item")
 
-const childNodes = bodyElement.childNodes;
+console.log(elemsOne);
 
 
-console.log(childNodes);
-
-console.log(bodyElement.hasChildNodes())
