@@ -1,5 +1,7 @@
-const elemsOne = document.querySelectorAll(".lesson .lesson__item")
+const newElement = document.createElement("div");
 
-console.log(elemsOne);
+newElement.innerHTML = "Доброго ранку"
+
+console.log(newElement);
 
 
