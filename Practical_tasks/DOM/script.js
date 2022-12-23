@@ -1,7 +1,6 @@
-const newElement = document.createElement("div");
 
-newElement.innerHTML = "Доброго ранку"
+const element = document.querySelector("h1");
 
-console.log(newElement);
+const elementStyle = getComputedStyle(element)
 
-
+console.log(elementStyle.color)
