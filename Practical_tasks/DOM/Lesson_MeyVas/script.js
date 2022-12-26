@@ -16,30 +16,50 @@ const header = document.createElement("h1")
 
 header.textContent = "DOM (Document Object Model)"
 
-div.insertAdjacentElement("beforebegin", header)
-
 // Добавить H1 перед DIV с классом wrapper
 
+div.insertAdjacentElement("beforebegin", header)
+
 // Создать список <ul></ul>
+
+const ul = `
+    <ul>
+      <li>один</li>
+      <li>два</li>
+      <li>три</li>
+    </ul>
+`;
 // Добавить в него 3 элемента с текстом "один, два, три"
 
-console.log(header)
-
 // Поместить список внутрь элемента с классом wrapper
+
+div.innerHTML = ul
 
 // =================================================
 // Создать изображение
 
+const img = document.createElement('img')
+
 // Добавить следующие свойства к изображению
 // 1. Добавить атрибут source
 
+img.src = "https://picsum.photos/240"
+
 // 2. Добавить атрибут width со значением 240
+
+img.width = 240;
 
 // 3. Добавить класс super
 
+img.classList.add("super")
+
 // 4. Добавить свойство alt со значением "Super Man"
 
+img.alt = "Super Man"
+
 // Поместить изображение внутрь элемента с классом wrapper
+
+div.appendChild(img)
 
 // Используя HTML строку, создать DIV с классом 'pDiv' + c 2-мя параграфами
 
