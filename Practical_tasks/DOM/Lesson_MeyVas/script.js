@@ -63,7 +63,17 @@ div.appendChild(img)
 
 // Используя HTML строку, создать DIV с классом 'pDiv' + c 2-мя параграфами
 
+const elemHTML = `
+<div class="pDiv">
+  <p>Параграф 1</p>
+  <p>Параграф 2</p>
+</div> `
+
+console.log(elemHTML)
 // Поместить этот DIV до элемента <ul></ul>
+
+div.insertAdjacentHTML("afterbegin", elemHTML)
+
 
 // Добавить для 2-го параграфа класс text
 
