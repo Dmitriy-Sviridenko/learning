@@ -1,5 +1,6 @@
 // Создать div
 const div = document.createElement("div");
+
 // Добавить к нему класс wrapper
 
 div.classList.add("wrapper")
@@ -68,19 +69,24 @@ const elemHTML = `
   <p>Параграф 1</p>
   <p>Параграф 2</p>
 </div> `
-
-console.log(elemHTML)
+ 
 // Поместить этот DIV до элемента <ul></ul>
 
 div.insertAdjacentHTML("afterbegin", elemHTML)
 
-
 // Добавить для 2-го параграфа класс text
+
+const pDiv = document.querySelector(".pDiv")
+
+pDiv.children[1].classList.add("text")
 
 // Удалить 1-й параграф
 
+pDiv.children[0].remove()
+
 // Создать функцию generateAutoCard, 
 // которая принимает 3 аргумента: brand, color, year
+
 
 // Функция должна возвращать разметку HTML:
 // <div class="autoCard">
@@ -88,7 +94,22 @@ div.insertAdjacentHTML("afterbegin", elemHTML)
 //   <p>Автомобиль BRAND - YEAR года. Возраст авто - YEARS лет.</p>
 // </div>
 
+const generateAutoCard = (brand, color, year) => {
+  const curDate = new Date()
+  const curYear = curDate.getFullYear();
+  return `
+    <div class="autoCard">
+      <h2>${brand.toUpperCase()} ${year}</h2>
+      <p>Автомобиль ${brand.toUpperCase()} - ${year} года. Возраст авто - ${curYear - year} лет.</p>
+      <p> Цвет: ${color.toLowerCase()}
+    </div>
+  `;
+}
+
 // Создать новый DIV с классом autos
+
+const carsDiv = document.createElement("div");
+carsDiv.classList.add("autos")
 
 // Создать 3 карточки авто, используя функцию generateAutoCard
 const carsList = [
@@ -97,9 +118,19 @@ const carsList = [
   {brand: 'Nissan', year: 2012, color: 'Черный'},
 ]
 
+const carsHTML = carsList.map(car =>{
+  return generateAutoCard(car.brand, car.color, car.year)
+}).join("");
+
+
+
 // Поместить эти 3 карточки внутрь DIV с классом autos
 
+carsDiv.innerHTML = carsHTML; 
+
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
+
+div.insertAdjacentElement("beforebegin", carsDiv)
 
 // Добавить кнопку Удалить на каждую карточку авто
 
