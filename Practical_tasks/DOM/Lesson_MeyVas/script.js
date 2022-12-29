@@ -101,7 +101,8 @@ const generateAutoCard = (brand, color, year) => {
     <div class="autoCard">
       <h2>${brand.toUpperCase()} ${year}</h2>
       <p>Автомобиль ${brand.toUpperCase()} - ${year} года. Возраст авто - ${curYear - year} лет.</p>
-      <p> Цвет: ${color.toLowerCase()}
+      <p> Цвет: ${color.toLowerCase()}</p>
+      <button type="button" class="btn">Удалить</button>
     </div>
   `;
 }
@@ -136,5 +137,18 @@ div.insertAdjacentElement("beforebegin", carsDiv)
 
 // При клике на кнопку - удалять карточку из структуры DOM
 // 1. Выбрать все кнопки
+
+const buttons = document.querySelectorAll(".btn")
+
 // 2. Создать функцию удаления
+
+function handleClick(e) {
+    const currentButton = e.currentTarget;
+
+    currentButton.closest(".autoCard").remove();
+}
 // 3. Использовать цикл - чтобы повесить обработчик события на каждую кнопку
+
+buttons.forEach(button =>{
+  button.addEventListener("click", handleClick)
+})
