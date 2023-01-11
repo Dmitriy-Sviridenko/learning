@@ -160,7 +160,8 @@ header {
 }
 
 .prevue__card {
-    text-align: center;    
+    text-align: center;   
+    max-width: 270px;
 }
 
 .prevue__image img {
@@ -185,6 +186,7 @@ header {
     font-size: 14px;
     line-height: 24px;
     color: rgba(51, 51, 51, 0.496405);
+    hyphens: auto;
 }
 /* prevue end */
 
@@ -196,6 +198,7 @@ header {
 .about__items {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .about__card {
     max-width: 50%;
@@ -400,6 +403,15 @@ header {
 .btn--orange-adventures{
     display: block;
     margin: 0 auto;
+    color: #F07C52;
+    border: 1px solid #F07C52;
+    background-color: white;
+}
+
+.btn--orange-adventures:hover{
+    background-color: #F07C52;
+    color: #FFFFFF; 
+    transition: ease 0.3s;
 }
 
 /* adventures end */
@@ -482,6 +494,10 @@ header {
     margin-top: 64px;
 }
 
+.testimonials__card {
+    max-width: 354px;
+}
+
 .testimonials__comma {
     position: absolute;
     transform: translateY(-44%) translateX(101%);
@@ -556,7 +572,7 @@ header {
 
 /* testimonials end */
 
-/* newsletter start */
+/*  start */
 .newsletter {
     background-color: #152a3f;
     margin-top: 128px;
@@ -632,7 +648,8 @@ header {
 }
 
 .newsletter__image_main {
-    height: 336px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .newsletter__image_main img {
