@@ -66,23 +66,31 @@ image.alt = "Super Man"
 
 first_div.appendChild(image)
 
-console.log(image)
 
 
 // Используя HTML строку, создать DIV с классом 'pDiv' + c 2-мя параграфами
 
+const pDiv = document.createElement('div')
+pDiv.className = "pDiv"
+pDiv.innerHTML = `
+<p>Параграф 1</p>
+<p>Параграф 2</p>
+`
 
  
 // Поместить этот DIV до элемента <ul></ul>
 
-
+first_div.insertAdjacentElement('afterbegin', pDiv)
 
 // Добавить для 2-го параграфа класс text
 
-
+pDiv.children[1].className = "text"
 
 // Удалить 1-й параграф
 
+pDiv.children[0].remove()
+
+console.log(pDiv.children[0])
 
 // Создать функцию generateAutoCard, 
 // которая принимает 3 аргумента: brand, color, year
