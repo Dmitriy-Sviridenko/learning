@@ -38,32 +38,35 @@ ul.innerHTML = `
 
 first_div.insertAdjacentElement("afterbegin", ul)
 
-console.log(ul)
 
 
 // =================================================
 // Создать изображение
 
-
+const image = document.createElement("img")
 
 // Добавить следующие свойства к изображению
 // 1. Добавить атрибут source
 
-
+image.setAttribute("src", "img.jpg" )
 
 // 2. Добавить атрибут width со значением 240
 
-
+image.setAttribute("width", "240")
 
 // 3. Добавить класс super
 
-
+image.className = "super"
 
 // 4. Добавить свойство alt со значением "Super Man"
 
-
+image.alt = "Super Man"
 
 // Поместить изображение внутрь элемента с классом wrapper
+
+first_div.appendChild(image)
+
+console.log(image)
 
 
 // Используя HTML строку, создать DIV с классом 'pDiv' + c 2-мя параграфами
