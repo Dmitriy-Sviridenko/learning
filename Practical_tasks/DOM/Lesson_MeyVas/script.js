@@ -90,11 +90,17 @@ pDiv.children[1].className = "text"
 
 pDiv.children[0].remove()
 
-console.log(pDiv.children[0])
 
 // Создать функцию generateAutoCard, 
 // которая принимает 3 аргумента: brand, color, year
 
+const generateAutoCard = (brand, color, year) => {
+  return `
+      <div class="autoCard">
+        <h2>BRAND YEAR</h2>
+        <p>Автомобиль BRAND - YEAR года. Возраст авто - YEARS лет.</p>
+      </div>`
+}
 
 // Функция должна возвращать разметку HTML:
 // <div class="autoCard">
@@ -105,16 +111,26 @@ console.log(pDiv.children[0])
 
 // Создать новый DIV с классом autos
 
+const div_auto = document.createElement("div")
+div_auto.className = 'autos'
+
 
 // Создать 3 карточки авто, используя функцию generateAutoCard
 
+const carsList = [
+  {brand: 'Tesla', year: 2015, color: 'Красный'},
+  {brand: 'Lexus', year: 2016, color: 'Серебристый'},
+  {brand: 'Nissan', year: 2012, color: 'Черный'},
+]
 
+const carsHTML = carsList.map()
 
 // Поместить эти 3 карточки внутрь DIV с классом autos
 
 
 // Поместить DIV c классом autos на страницу DOM - до DIV с классом wrapper
 
+console.log(div_auto)
 
 
 // Добавить кнопку Удалить на каждую карточку авто
