@@ -347,7 +347,7 @@ header {
     margin-bottom: 78px;
 }
 
-.adventures__item_pink {
+.adventures__item {
     display: block;
     margin-top: 32px;
     height: 352px;
@@ -355,24 +355,26 @@ header {
     background: #FFF2F2;
 }
 
-.adventures__item_grey {
-    display: block;
-    margin-top: 32px;
-    height: 352px;
-    width: 270px;
-    background: #F5F6F8;;
-}
 
-.adventures__item_grey p, .adventures__item_pink p {
+.adventures__item p{
     margin-left: 32px;
 }
 
-.adventures__item_pink:hover, .adventures__item_grey:hover {
+.adventures__item:nth-child( n + 9 ){
+    display: none;
+}
+
+.adventures__item:hover {
     background-color: #6347F9;
     color: #fff; 
     transition: ease 0.3s;
     cursor: pointer;
 }
+
+.adventures__item.is-visible {
+    display: block;
+}
+
 
 .adventures__card-title {
     margin-top: 24px;
@@ -410,6 +412,13 @@ header {
     color: #F07C52;
     border: 1px solid #F07C52;
     background-color: white;
+    font-family: 'Lexend Zetta';
+    font-weight: 400;
+    letter-spacing: -2px;
+    padding: 15px 25px;
+    min-width: 154px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .btn--orange-adventures:hover{
