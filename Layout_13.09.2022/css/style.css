@@ -502,7 +502,7 @@ header {
     text-align: center;
 }
 
-.testimonials__reviews {
+.testimonials__slider {
     display: flex;
     justify-content: space-around;
     margin-top: 64px;
@@ -556,33 +556,10 @@ header {
     color: rgba(51, 51, 51, 0.496405);
 }
 
-.testimonials__switcher{
-    display: flex;
-    justify-content: center;
-    margin-top: 96px;
-}
 
-.testimonials__circle {
-    position: relative;
-    border: 1px solid #F07C52;
-    border-radius: 50%;
-    height: 16px;
-    width: 16px;
-    margin-left: 16px;
-}
 
-.testimonials__circle::before{
-    display: block;
-    content: "";
-    background-color: #F07C52;
-}
 
-.testimonials__radio{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+
 
 /* testimonials end */
 

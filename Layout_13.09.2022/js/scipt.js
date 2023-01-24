@@ -14,5 +14,4 @@ adventuresBtn.addEventListener('click', () => {
 })
 
 
-
-
+new Swiper("testimonials__reviews");
