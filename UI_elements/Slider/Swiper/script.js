@@ -9,7 +9,7 @@ new Swiper(".image-slider", {
   pagination: {
     el: ".swiper-pagination",
     //буллеты
-    // type: "bullets",
+    type: "bullets",
     
     // clickable: true,
     // dynamicBullets: true,
@@ -17,7 +17,7 @@ new Swiper(".image-slider", {
     // 1 / 2, 3 / 6 etc.
     //type: "fraction",
     
-    type: "progressbar",
+    //type: "progressbar",
   },
 
   //скролл 
@@ -30,4 +30,52 @@ new Swiper(".image-slider", {
 
   //переключение при клике на слайд
   slideToClickedSlide: true,
+
+  //управление клавиатурой 
+  keyboard: {
+    enabled: true,
+    //только когда скрол в зоне видимости
+    onlyInViewport: true,
+    //использование клавиш page up / down
+    pageUpDown: true,
+  },
+
+
+  //прокрутка при помощи колеа мыши
+  mousewheel: {
+    sensitivity: 1,
+  },
+
+  //автовысота
+  autoHeight: true,
+
+  //колличество слайдов для показа
+  slidesPerView: 3,
+
+  //отступ между слайдами
+  spaceBetween: 30,
+
+  //колличество пролистываемых слайдов
+  slidesPerGroup: 1,
+
+  //активный слайд по центру
+  centeredSlides: true,
+
+  //мультирядность
+  //slidesPerColumn: 2,
+
+  //бесконечный слайдер
+  loop: true,
+
+  //автопрокрутка
+  autoplay: {
+    //в милисекундах
+    delay: 1000,
+    //остановить после прокрутки
+    stopOnLastSlide: true,
+    disableOnInteraction: false
+  },
+
+  //скорость переключения слайдов
+  speed: 1200,
 });
