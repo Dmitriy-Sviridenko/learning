@@ -78,4 +78,28 @@ new Swiper(".image-slider", {
 
   //скорость переключения слайдов
   speed: 1200,
+
+  //эфекты переключения слайдов
+  // effect: "fade",
+  // fadeEffect: {
+  //   //смена прозрачности
+  //   crossFade: true
+  // },
+
+  //адаптив по размеру экарана
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    480: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+
+  //паралакс эффект + необходимо внести правки в HTML
+  //parallax: true,
+  
 });
