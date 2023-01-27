@@ -266,8 +266,6 @@ header {
     object-fit: fill;
 }
 
-.card_right__img img {
-}
 
 /* about end */
 
@@ -457,9 +455,6 @@ header {
     transform: translateY(-119%) translateX(93%)
 }
 
-.features__title {
-}
-
 .features__subtitle {
     margin-top: 33px;
     margin-left: -9px;
@@ -502,16 +497,18 @@ header {
     text-align: center;
 }
 
+.testimonials__reviews{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* не нравится флекс */
 .testimonials__slider {
-    display: flex;
-    justify-content: space-around;
     margin-top: 64px;
 }
 
-.testimonials__card {
-    max-width: 354px;
-}
-
+/* требуется повторная настройка */
 .testimonials__comma {
     position: absolute;
     transform: translateY(-44%) translateX(101%);
@@ -540,7 +537,6 @@ header {
 .testimonials__about{
     display: block;
     margin-left: 24px;
-    
 }
 
 .testimonials__name {
@@ -555,7 +551,6 @@ header {
     line-height: 24px;
     color: rgba(51, 51, 51, 0.496405);
 }
-
 
 
 
