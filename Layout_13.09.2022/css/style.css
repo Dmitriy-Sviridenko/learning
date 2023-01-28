@@ -514,7 +514,6 @@ header {
 }
 
 .testimonials__text {
-    max-width: 90%;
     padding: 50px 48px;
     font-family: 'Open Sans';
     font-size: 16px;
@@ -562,10 +561,9 @@ header {
 }
 
 
-
 /* testimonials end */
 
-/*  start */
+/*  newsletter start */
 .newsletter {
     background-color: #152a3f;
     margin-top: 128px;
