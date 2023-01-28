@@ -503,12 +503,11 @@ header {
     overflow: hidden;
 }
 
-/* не нравится флекс */
 .testimonials__slider {
     margin-top: 64px;
+    margin-bottom: 96px;
 }
 
-/* требуется повторная настройка */
 .testimonials__comma {
     position: absolute;
     transform: translateY(-44%) translateX(101%);
@@ -552,7 +551,15 @@ header {
     color: rgba(51, 51, 51, 0.496405);
 }
 
+.swiper-pagination {
+    position: relative;
+}
 
+.swiper-pagination-bullet {
+    background-color: #F07C52;
+    width: 16px;
+    height: 16px;
+}
 
 
 
