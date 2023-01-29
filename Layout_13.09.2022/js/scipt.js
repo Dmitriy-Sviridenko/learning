@@ -40,3 +40,17 @@ new Swiper(".testimonials__reviews", {
     spaceBetween: 100,
     
   });
+
+const openPopUp = document.querySelectorAll(".pop-up__button").forEach(
+    item => item.addEventListener("click", function(e){
+    e.preventDefault(); //отключение переходов по ссылке
+    popUp.classList.add("active");
+  })
+)
+
+const closePopUp = document.querySelector(".pop_up_close");
+const popUp = document.querySelector(".pop_up");
+closePopUp.addEventListener("click", () =>{
+  popUp.classList.remove("active");
+})
+
