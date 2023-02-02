@@ -513,6 +513,7 @@ header {
     transform: translateY(-44%) translateX(101%);
 }
 
+
 .testimonials__text {
     padding: 50px 48px;
     font-family: 'Open Sans';
@@ -772,7 +773,9 @@ header {
     border: 1px solid #fff;
     padding: 11px 11px;
     border-radius: 50%;
+    color: #e5e5e5;
 }
+
 
 .contact__phone {
     font-family: 'Open Sans';
@@ -941,13 +944,13 @@ footer {
   
   .pop_up_body{
     margin: auto;
-    top: -140px;
     width: 500px;
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
     padding: 100px;
     position: relative;
+    transform: translateY(-10%);
   }
   
   .pop_up__text {
