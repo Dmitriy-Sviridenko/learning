@@ -948,7 +948,7 @@ footer {
     background-color: #fff;
     border-radius: 10px;
     text-align: center;
-    padding: 100px;
+    padding: 80px 100px;
     position: relative;
     transform: translateY(-10%);
   }
@@ -984,7 +984,7 @@ footer {
     cursor: pointer;
     display: block;
     width: 300px;
-    margin: 60px auto 0px auto;
+    margin: 30px auto 0px auto;
     padding: 20px 0px;
     font-weight: 500;
     font-size: 16px;
@@ -1004,4 +1004,19 @@ footer {
     right: 28px;
     font-size: 21px;
     cursor: pointer;
+  }
+
+  .pop_up__agreement {
+    margin-top: 30px;
+    font-family: "Open Sans";
+  }
+
+  .pop_up__agreement a {
+    color: #F07C52;
+    text-decoration: none;
+  }
+
+  .pop_up__agreement a:hover {
+    color: #ffa888;
+    text-decoration: underline;
   }
