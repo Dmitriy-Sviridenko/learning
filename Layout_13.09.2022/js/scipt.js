@@ -1,19 +1,37 @@
+//start show adventures__item
+
 const adventuresBtn = document.querySelector(".btn--orange-adventures");
 const adventuresProductsLength = document.querySelectorAll(".adventures__item").length;
-let adventuresItems = 8;
+let adventuresItems; //amount of start adventures__item
+let addadventuresItems; //amount of adding adventures__item
 
-adventuresBtn.addEventListener('click', () => {
-    adventuresItems += 4;
-    const array = Array.from(document.querySelector('.adventures__cards').children);
-    const adventuresVisItems = array.slice(0, adventuresItems);
-    adventuresVisItems.forEach(el => el.classList.add('is-visible'));
+//опредялем размер окна
+function adventuresCards () {
+  if (window.innerWidth > 1200) {
+    adventuresItems = 8;
+    addadventuresItems = 4;
+  } else if (window.innerWidth < 1199) {
+    adventuresItems = 6;
+    addadventuresItems = 3;
+  }
+}
 
-    if(adventuresVisItems.length === adventuresProductsLength) {
-        adventuresBtn.style.display = 'none'
-    }
+adventuresCards()
+
+
+adventuresBtn.addEventListener('click', () => { 
+  adventuresItems += addadventuresItems;
+  const array = Array.from(document.querySelector('.adventures__cards').children);
+  const adventuresVisItems = array.slice(0, adventuresItems);
+  adventuresVisItems.forEach(el => el.classList.add('is-visible'));
+  if(adventuresVisItems.length === adventuresProductsLength) {
+      adventuresBtn.style.display = 'none'
+  }
 })
 
+// end show adventures__item
 
+//start Swiper
 new Swiper(".testimonials__reviews", {
 
     //пагинация 
@@ -22,23 +40,17 @@ new Swiper(".testimonials__reviews", {
       type: "bullets",
       clickable: true,
     },
-  
     //прокрутка при помощи колеа мыши
     mousewheel: {
       sensitivity: 1,
     },
-  
     //колличество слайдов для показа
     slidesPerView: 3,
-  
     //колличество пролистываемых слайдов
     slidesPerGroup: 3,
-  
     //бесконечный слайдер
-    loop: true,
-  
+    loop: true, 
     spaceBetween: 100,
-    
   });
 
 

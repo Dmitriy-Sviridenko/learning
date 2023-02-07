@@ -1,0 +1,187 @@
+@media (max-width: 1450px ) {
+    
+  .prevue__image_small img {
+    height: 320px;
+    width: 250px;
+  }
+
+  .prevue__image img {
+    height: 380px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 1310px ) {
+  .prevue__card:last-child {
+    display: none;
+  }
+
+  .prevue__image img {
+    height: 320px;
+    width: 250px;
+  }
+
+  h2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .exclusive {
+    padding: 20px 0;
+    margin-top: 80px;
+  }
+
+  .exclusive__cards {
+    margin-top: 40px;
+  }
+
+  .exclusive__text {
+    font-size: 37px;
+  }
+
+  .exclusive__subtext{
+    font-size: 14px;
+  }
+
+  .adventures__title {
+    margin-top: 50px;
+  }
+
+  .adventures__cards {
+    margin-top: 30px;
+  }
+
+  .adventures__item {
+    margin-top: 16px;
+  }
+
+  .features {
+    margin-top: 110px;
+  }
+
+  .features__text {
+    font-size: 18px;
+  }
+
+  .features__options {
+    font-size: 20px;
+  }
+
+  .testimonials {
+    margin-top: 100px;
+  }
+
+  .newsletter__cards {
+    padding-top: 40px;
+  }
+
+  .feedback {
+    padding-top: 60px;
+  }
+
+  .contact {
+    padding: 80px 0;
+  }
+
+  .contact__phone {
+    font-size: 20px;
+  }
+
+  .bottom__container {
+    padding-bottom  : 50px;
+  }
+
+  footer{
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 1199px ) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .about__card_right{
+    display: none;
+  }
+
+  /* медиа запрос под карточки товаров */
+  .adventures__item:nth-child( n + 7 ){
+    display: none;
+  }
+
+  .adventures__item.is-visible {
+    display: block;
+  }
+
+  .features__img_right {
+    transform: translateY(-119%) translateX(69%);
+  }
+
+  .exclusive__cards {
+    display: block;
+  }
+
+  .exclusive__item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 370px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .newsletter__card {
+    width: 500px;
+} 
+
+  .adventures__item {
+    margin-left: 10px;
+  }
+
+  .testimonials__text {
+    min-height: 368px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 1120px ) {
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 46px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .contact__subtitle {
+    margin: 10px -5px;
+  }
+
+  .contact__title{
+    margin-bottom: 10px
+  }
+   
+  .contact__map iframe {
+    width: 500px;
+  }
+
+  .bottom__container {
+    padding-bottom: 30px;
+  }
+
+}

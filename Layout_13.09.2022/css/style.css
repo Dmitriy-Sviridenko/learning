@@ -14,9 +14,15 @@ body {
     line-height: 32px;
     background-color: rgb(255, 255, 255);
     color: #010208;
+    border: none;
+}
+
+h1 {
+    font-size: 72px;
 }
 
 h2 {
+  margin-top: 32px;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -32,6 +38,7 @@ h3 {
 }
 
 .container {
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
@@ -140,7 +147,6 @@ header {
     padding-top: 19px;
     letter-spacing: -14px;
     font-weight: 400;
-    font-size: 72px;
     line-height: 80px;;
     color: #FFFFFF;
 }
@@ -205,7 +211,6 @@ header {
 }
 
 .about__subtitle {
-    margin-top: 31px;
     transform: translateX(-2%);
 }
 
@@ -282,7 +287,6 @@ header {
 }
 
 .exclusive__subtitle {
-    margin-top: 34px;
     text-align: center;
 }
 
@@ -334,7 +338,7 @@ header {
     margin-top: 78px;
 }
 .adventures__subtitle {
-    margin: 33px 0px 0px -7px;
+    margin-left: -7px;
 }
 
 .adventures__cards {
@@ -456,7 +460,6 @@ header {
 }
 
 .features__subtitle {
-    margin-top: 33px;
     margin-left: -9px;
 }
 
@@ -493,7 +496,6 @@ header {
 }
 
 .testimonials__subtitle {
-    margin-top: 34px;
     text-align: center;
 }
 
@@ -590,10 +592,10 @@ header {
 
 .newsletter__subtitle {
     margin-left: -10px;
-    font-size: 56px;
     line-height: 64px;
     letter-spacing: -12px;
     color: #FFFFFF;
+    margin-top: 0;
 }
 
 .newsletter__cards {
