@@ -139,10 +139,10 @@
 
   .newsletter__card {
     width: 500px;
-} 
+  } 
 
   .adventures__item {
-    margin-left: 10px;
+    margin: 16px 5px 0 5px;
   }
 
   .testimonials__text {
@@ -175,6 +175,14 @@
   .contact__title{
     margin-bottom: 10px
   }
+
+  .newsletter {
+    margin-top: 60px
+  }
+
+  .testimonials__slider {
+    margin-bottom: 60px
+  }
    
   .contact__map iframe {
     width: 500px;
@@ -184,4 +192,231 @@
     padding-bottom: 30px;
   }
 
+  .newsletter__card {
+    width: 450px;
+  } 
+
+}
+
+@media (max-width: 1073px ) {
+
+  h2 {
+    font-size: 38px;
+    margin-top: 5px;
+    line-height: 1em;
+    letter-spacing: -9px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+
+  .about__card {
+    text-align: center;
+  }
+
+  .prevue__card:nth-last-child(2) {
+    display: none;
+  }
+
+  .prevue {
+    padding: 0 15px;
+  }
+
+  .about__text {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .about__subcard {
+    margin-top: 20px;
+  }
+
+  .about__img img{
+    height: 440px;
+    width: 350px;
+  }
+  .exclusive__cards {
+    margin-top: 15px;
+  }
+
+  .exclusive__item {
+    margin-bottom: 20px;
+  }
+
+  .features__items {
+    text-align: center;
+  }
+
+  .features__text, .features__options {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .features__line {
+    margin-bottom: 20px;
+  }
+
+  .features__img_main{
+    height: 440px;
+    width: 350px;
+  }
+
+  .features__img_main img{
+    height: 440px;
+    width: 350px;
+  }
+
+  .features__img_right{
+    width: 200px;
+    height: 299px;
+    transform: translateY(-123%) translateX(142%);
+  }
+
+  .features__img_right img {
+    width: 200px;
+    height: 299px;
+  }
+
+  .btn--orange {
+    display: block;
+    margin: 30px auto 0 auto;
+  }
+
+  .testimonials__text {
+    min-height: 333px;
+    padding: 24px;
+  }
+
+  .subtitle__bar {
+    margin-top: 15px;
+  }
+
+  .newsletter__cards {
+    padding-bottom: 20px;
+  }
+
+  .feedback {
+    padding-top: 20px;
+  }
+
+  .feedback__input {
+    width: 200px;
+  }
+
+  .feedback__email {
+    padding: 5px 7px;
+    margin-right: 80px;
+  }
+
+  .contact{
+    padding: 50px 0;
+  }
+
+  .contact__info{
+    font-size: 16px;
+  }
+
+  .contact__cards {
+    text-align: center;
+  }
+
+  .contact__card{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1050px ) {
+  .header__nav {
+    display: none;
+  }
+
+  .testimonials__text{
+    min-height: 260px;
+  }
+
+  .testimonials__author{
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .newsletter__subtitle{
+    letter-spacing: -8px;
+  }
+
+  .newsletter__cards{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .newsletter__card {
+    margin: 0 auto ;
+    width: 600px;
+  }
+
+  .newsletter__card:last-child{
+    margin-top: 20px;
+  }
+
+  .feedback__container{
+    display: block;
+    text-align: center;
+  }
+
+  .feedback__form{
+    padding: 30px 0;
+    justify-content: space-around;
+  }
+
+  .contact__map iframe {
+    width: 450px;
+    height: 425px;
+  }
+}
+
+@media (max-width: 919px ) {
+  .exclusive__img img {
+    height: 370px;
+    width: 350px;
+  }
+
+  .exclusive__price{
+    font-size:30px;
+    transform: translateY(-149%) translateX(33%);
+    padding: 27px 24px 27px 18px;
+  }
+
+  .adventures {
+    text-align: center;
+  }
+  .adventures__cards{
+    justify-content: space-around;
+  }
+
+  .adventures__item p {
+    margin: 0;
+  }
+
+  .adventures__img {
+   margin: 5px;
+  }
+
+  .contact__items {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .contact__cards {
+    margin-bottom: 30px;
+  }
+
+  .contact__map iframe {
+    width: 680px;
+    height: 445px;
+  }
 }

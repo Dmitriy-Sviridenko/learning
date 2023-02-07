@@ -10,7 +10,7 @@ function adventuresCards () {
   if (window.innerWidth > 1200) {
     adventuresItems = 8;
     addadventuresItems = 4;
-  } else if (window.innerWidth < 1199) {
+  } else if (window.innerWidth <= 1199) {
     adventuresItems = 6;
     addadventuresItems = 3;
   }
@@ -40,17 +40,33 @@ new Swiper(".testimonials__reviews", {
       type: "bullets",
       clickable: true,
     },
+
     //прокрутка при помощи колеа мыши
-    mousewheel: {
-      sensitivity: 1,
-    },
+    // mousewheel: {
+    //   sensitivity: 1,
+    // },
+
+
     //колличество слайдов для показа
+    
     slidesPerView: 3,
     //колличество пролистываемых слайдов
     slidesPerGroup: 3,
     //бесконечный слайдер
     loop: true, 
     spaceBetween: 100,
+
+    breakpoints: {
+      1051: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+    },
   });
 
 

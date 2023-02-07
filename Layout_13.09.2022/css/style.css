@@ -352,7 +352,6 @@ header {
 .adventures__item {
     display: block;
     margin-top: 32px;
-    height: 352px;
     width: 270px;
     background: #FFF2F2;
 }
@@ -399,6 +398,8 @@ header {
 }
 
 .adventures__img {
+    display: flex;
+    align-items: flex-end;
     margin-top: 23px;
 }
 
@@ -675,7 +676,6 @@ header {
 
 .feedback__title {
     margin-left: -6px;
-    font-size: 40px;
     line-height: 48px;
     letter-spacing: -8px;
     color: #FFFFFF;
