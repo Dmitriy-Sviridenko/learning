@@ -117,22 +117,16 @@
     display: none;
   }
 
-  .adventures__item.is-visible {
-    display: block;
-  }
-
   .features__img_right {
     transform: translateY(-119%) translateX(69%);
   }
 
   .exclusive__cards {
-    display: block;
+    flex-direction: column;
+    align-items: center;
   }
 
   .exclusive__item {
-    margin-left: auto;
-    margin-right: auto;
-    width: 370px;
     text-align: center;
     margin-bottom: 35px;
   }
@@ -293,7 +287,18 @@
   }
 
   .subtitle__bar {
+    display: block;
+    text-align: center;
     margin-top: 15px;
+  }
+
+  .newsletter__title {
+    text-align: center;
+  }
+
+  .newsletter__subtitle{
+    letter-spacing: -8px;
+    margin-bottom: 15px;
   }
 
   .newsletter__cards {
@@ -304,8 +309,18 @@
     padding-top: 20px;
   }
 
+  .feedback__container{
+    display: block;
+    text-align: center;
+  }
+
   .feedback__input {
     width: 200px;
+  }
+  
+  .feedback__form{
+    padding: 30px 0;
+    justify-content: space-around;
   }
 
   .feedback__email {
@@ -344,10 +359,6 @@
     justify-content: center;
   }
 
-  .newsletter__subtitle{
-    letter-spacing: -8px;
-  }
-
   .newsletter__cards{
     display: block;
     margin: 0 auto;
@@ -355,21 +366,10 @@
 
   .newsletter__card {
     margin: 0 auto ;
-    width: 600px;
   }
 
   .newsletter__card:last-child{
     margin-top: 20px;
-  }
-
-  .feedback__container{
-    display: block;
-    text-align: center;
-  }
-
-  .feedback__form{
-    padding: 30px 0;
-    justify-content: space-around;
   }
 
   .contact__map iframe {
@@ -390,6 +390,10 @@
     padding: 27px 24px 27px 18px;
   }
 
+  .adventures__item:nth-child( n + 5 ){
+    display: none;
+  }
+
   .adventures {
     text-align: center;
   }
@@ -403,6 +407,10 @@
 
   .adventures__img {
    margin: 5px;
+  }
+
+  .features__img_right{
+    display: none;
   }
 
   .contact__items {
@@ -419,4 +427,146 @@
     width: 680px;
     height: 445px;
   }
+
+}
+
+@media (max-width: 804px ) {
+  h1 {
+    font-size: 42px;
+  }
+
+  .hero {
+    padding: 120px 0;
+  }
+
+  .hero__title{
+    padding-top: 6px;
+    letter-spacing: -10px;
+    line-height: 55px;
+  }
+
+  .hero__subtitle{
+    font-size: 15px;
+  }
+
+  .about__card {
+    max-width: 90%;
+  }
+
+  .prevue{
+    display: none;
+  }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .about__items{
+    justify-content: center;
+  }
+
+  .about__img {
+    display: none;
+  }
+
+  .about__text{
+    margin-top: 15px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 20px;
+  }
+  
+  .features__items{
+    justify-content: center;
+  }
+
+  .features__item {
+    max-width: 90%;
+  } 
+
+  .features__img_main{
+    display: none;
+  }
+
+  .testimonials__text{
+    min-height: auto;
+  }
+
+  .bottom__container {
+    display: block;
+    text-align: center;
+  }
+  
+  .bottom__title{
+    margin: 25px 0;
+  }
+
+  .footer__container{
+    display: block;
+    text-align: center;
+  }
+
+  .footer__items {
+    margin-top: 15px;
+    justify-content: center;
+  }
+
+  .contact__map iframe{
+    width: 480px;
+    height: 405px;
+  }
+}
+
+@media (max-width: 639px ) {
+  
+  .adventures__item:nth-child( n + 2 ){
+    display: none;
+  }
+
+  .feedback__form {
+    flex-direction: column;
+  }
+
+  .feedback__email{
+    margin-bottom: 20px;
+    width: 200px;
+    margin-right: 0;
+  }
+
+  .newsletter__card{
+    width: auto;
+  }
+
+  .feedback__input {
+    width: 150px;
+  }
+
+  .contact__map {
+    display: none;
+  }
+}
+
+@media (max-width: 423px ) { 
+  .exclusive__img img {
+    height: 270px;
+    width: 266px;
+  }
+
+  .exclusive__price {
+    transform: translateY(-130%) translateX(16%);
+  }
+
+  .newsletter__card-content {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer__link{
+    font-size: 13px;
+  }
+}
+
+
+.adventures__item.is-visible {
+  display: block;
 }

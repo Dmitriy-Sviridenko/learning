@@ -7,17 +7,25 @@ let addadventuresItems; //amount of adding adventures__item
 
 //опредялем размер окна
 function adventuresCards () {
-  if (window.innerWidth > 1200) {
-    adventuresItems = 8;
-    addadventuresItems = 4;
+  if (window.innerWidth <= 639) {
+    adventuresItems = 1;
+    addadventuresItems = 1;
+  } else if (window.innerWidth <= 919) {
+    adventuresItems = 4;
+    addadventuresItems = 2;
   } else if (window.innerWidth <= 1199) {
     adventuresItems = 6;
     addadventuresItems = 3;
+  } else if (window.innerWidth > 1200) {
+    adventuresItems = 8;
+    addadventuresItems = 4;
   }
 }
 
 adventuresCards()
 
+console.log(adventuresItems)
+console.log(addadventuresItems)
 
 adventuresBtn.addEventListener('click', () => { 
   adventuresItems += addadventuresItems;
@@ -42,9 +50,9 @@ new Swiper(".testimonials__reviews", {
     },
 
     //прокрутка при помощи колеа мыши
-    // mousewheel: {
-    //   sensitivity: 1,
-    // },
+    mousewheel: {
+      sensitivity: 1,
+    },
 
 
     //колличество слайдов для показа
@@ -62,9 +70,14 @@ new Swiper(".testimonials__reviews", {
         slidesPerGroup: 3,
       },
 
-      768: {
+      804: {
         slidesPerView: 2,
         slidesPerGroup: 2,
+      },
+
+      1: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
       },
     },
   });

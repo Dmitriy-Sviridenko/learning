@@ -475,7 +475,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 57px;
-    list-style-image: url(/img/Path.svg);
+    list-style-image: url(../img/Path.svg);
 }
 
 .features__options {
