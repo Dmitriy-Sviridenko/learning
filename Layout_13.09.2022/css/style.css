@@ -203,6 +203,10 @@ header {
     background-color: #6347F9;
 }
 
+.hero_short{ 
+    padding-bottom: 250px;
+}
+
 .hero__subtitle {
     font-family: 'Open Sans';
     letter-spacing: 3px;
@@ -399,6 +403,9 @@ header {
 /* exclusive end */
 
 /* adventures start */
+.adventures{
+    margin-bottom: 150px;
+}
 
 .adventures__title {
     margin-top: 78px;
@@ -499,9 +506,6 @@ header {
 /* adventures end */
 
 /* features start */
-.features {
-    margin-top: 192px;
-}
 
 .features__items {
     display: flex;

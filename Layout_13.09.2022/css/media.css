@@ -62,8 +62,8 @@
     margin-top: 16px;
   }
 
-  .features {
-    margin-top: 110px;
+  .adventures {
+    margin-bottom: 110px;
   }
 
   .features__text {
@@ -379,8 +379,6 @@
     
   }
 
-
-
   .nav__item:not(:last-child){
     margin-right: 0;
   }
@@ -418,6 +416,10 @@
   .contact__map iframe {
     width: 450px;
     height: 425px;
+  }
+
+  .pop_up_body{
+    padding: 40px 50px;
   }
 }
 
@@ -606,6 +608,19 @@
 
   .footer__link{
     font-size: 13px;
+  }
+
+  .pop_up_body {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .pop_up_body input {
+    width: 265px;
+  }
+
+  .pop_up_body button{
+    width: 265px;
   }
 }
 
