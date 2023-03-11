@@ -21,7 +21,6 @@ body {
 h1 {
   font-weight: 700;
   font-size: 64px;
-  line-height: 75px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -33,6 +32,14 @@ h2 {
   letter-spacing: 0.05em;
   text-transform: uppercase
 }
+
+h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 49px;
+  letter-spacing: 0.05em;
+}
+
 
 a {
   text-decoration: none;
@@ -51,7 +58,7 @@ li {
   padding: 0 15px;
 }
 
-.btn{
+button{
   color: #fff;
   padding: 15px 25px;
   min-width: 154px;
@@ -61,7 +68,7 @@ li {
   border: none;
 }
 
-.btn:hover{
+button:hover{
   background: #dbb369;
 }
 
@@ -340,6 +347,75 @@ li {
 }
 
 /* company-info end */
+
+/* advantage start */
+
+.advantage {
+  margin-bottom: 100px;
+}
+
+.advantage__header {
+  margin-bottom: 70px;
+}
+
+.advantage__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantage__item {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 28px 54px;
+  text-align: center;
+  background-color: #393F47
+}
+
+.advantage__image img {
+  margin-bottom: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+/* advantage end */
+
+/* cars start */
+
+.cars {
+  margin-bottom: 100px;
+}
+
+.cars__header {
+  margin-bottom: 70px;
+}
+
+.cars__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.car__item {
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #393F47;
+  padding-bottom: 20px;
+}
+
+.cars__image img {
+  width: 300px;
+  height: 216px;
+}
+
+.car__item p {
+  margin-bottom: 10px;
+}
+
+/* cars end */
 
 /* footer start*/
 
