@@ -17,7 +17,7 @@
         <a class="header__logo-img" href="# "><img src="img/Logo.svg" alt="" ></a>
         <a class="header__logo-name" href="#">Company name</a>
         <span class="vertical-line"></span>
-        <div class="contact__phone">+7(909)000-00-00</div>
+        <a href="tel:+7(812)344-56-65" class="contact__phone">+7 (812) 344-56-65</a>
       </div>
       
       
@@ -29,7 +29,7 @@
           <a href="#" class="nav__link">О компании</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">Вакансии</a>
+          <a href="#" class="nav__link">Услуги</a>
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link">Контакты</a>
@@ -51,7 +51,7 @@
         <span class="underline"></span>
         <h2 class="about__titlte">грузоперевозки по европе</h2>
         <p class="about__info">Страны Евросоюза, а также Украина, Белоруссия со всеми документами.</p>
-        <button class="btn">ПОДРОБНЕЕ</button>
+        <button class="btn pop-up__button">ПОДРОБНЕЕ</button>
       </div>
 
       <img class="about__img" src="img/about.png" alt="">
@@ -66,20 +66,20 @@
       <h2 class="services__title">услуги</h2>
       <div class="services__elements">
         <button class="services__item " data-tab="#tab_1">
-          <img class="services__image" src="img/Services.svg" alt="" class="services__icon">
-          <p class="services__text">Авиаперевозки</p>
-        </button>
-        <button class="services__item" data-tab="#tab_2">
-          <img class="services__image" src="img/Services.svg" alt="" class="services__icon">
+          <img class="services__image" src="img/services_1.svg" alt="" class="services__icon">
           <p class="services__text">Грузоперевозки</p>
         </button>
-        <button class="services__item" data-tab="#tab_3">
-          <img class="services__image" src="img/Services.svg" alt="" class="services__icon">
+        <button class="services__item" data-tab="#tab_2">
+          <img class="services__image" src="img/services_2.svg" alt="" class="services__icon">
           <p class="services__text">Разнорабочие</p>
         </button>
+        <button class="services__item" data-tab="#tab_3">
+          <img class="services__image" src="img/Services_3.svg" alt="" class="services__icon">
+          <p class="services__text">Уборка участков</p>
+        </button>
         <button class="services__item" data-tab="#tab_4">
-          <img class="services__image" src="img/Services.svg" alt="" class="services__icon">
-          <p class="services__text">Вывоз мусора  </p>
+          <img class="services__image" src="img/services_4.svg" alt="" class="services__icon">
+          <p class="services__text">Вывоз мусора</p>
         </button>
       </div>
       <div class="services__content">
@@ -152,7 +152,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button">Заказать</button>
+          <button class="cars__button pop-up__button">Заказать</button>
         </div>
 
         <div class="car__item">
@@ -164,7 +164,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button">Заказать</button>
+          <button class="cars__button pop-up__button">Заказать</button>
         </div>
 
         <div class="car__item">
@@ -176,7 +176,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button">Заказать</button>
+          <button class="cars__button pop-up__button">Заказать</button>
         </div>
       </div>
     </div>
@@ -217,21 +217,60 @@
 
   <footer>
     <div class="container footer__container">
-      <div class="footer__logo-container">
-        <a class="footer__logo-img" href="# "><img src="img/Footer_logo.svg" alt="" ></a>
-        <a class="footer__logo-name" href="#">Company name</a>
+      <div class="footer__top-section">
+        <div class="footer__logo-container">
+          <a class="footer__logo-img" href="# "><img src="img/Logo.svg" alt="" ></a>
+          <a class="footer__logo-name" href="#">Company name</a>
+        </div>
+
+        <div class="footer__menu">
+          <h3 class="fotter__menu_header">Навигация</h3>
+          <ul class="nav__list_footer">
+            <li class="nav__item_footer">
+              <a href="#" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item_footer">
+              <a href="#" class="nav__link">О компании</a>
+            </li>
+            <li class="nav__item_footer">
+              <a href="#" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item_footer">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__adress">
+          <div class="footer__ofice">123456, Санкт-Петербург, Невский пр-кт 127</div>
+          <a href="tel:+7(812)344-56-65" class="footer__phone">+7 (812) 344-56-65</a>
+          <a href="mailto:community@dwidasa.com" class="footer__email">Email : community@dwidasa.com</a>
+        </div>  
       </div>
 
-      <div class="footer__adess">
-        <div class="footer__ofice">123456, Санкт-Петербург, Невский пр-кт 127</div>
-        <div class="footer__email">sales@log.ru</div>
-      </div>
-
-      <div class="footer__phone">
-        +7 (812) 344-56-65
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Информация на данном сайте носит информационный характер и не является офертой. ст. 437 ч. 1 ГК РФ. Все права защищены.
+          © 2013-2023 Раз!Грузчики - официальный сайт. ООО "Ромашка" ИНН 7203514702, ОГРН 1217200001105</p>
       </div>
     </div>
   </footer>
+
+  <div class="pop_up">
+    <div class="pop_up_container">
+      <div class="pop_up_body">
+        <p class="pop_up__text">Заказать обратный звонок</p>
+        <form action="">
+          <input type="text" placeholder="Ваше имя">
+          <input type="text" placeholder="Ваш номер телефона">
+          <p class="pop_up__agreement">Нажимая кнопку отправить 
+            <a href="documents/Privacy Policy.docx" download class="pop_up__agreement">вы сагшаетесь с правилами обработки персональных данных</a>
+           </p>
+          <button>Отправить</button>
+        </form>
+        <div class="pop_up_close">&#10006</div>
+      </div>
+    </div>
+  </div>
 
  <script src="js/scipt.js"></script> 
 </body>
