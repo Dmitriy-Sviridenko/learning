@@ -15,6 +15,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+}
+
+p {
   line-height: 28px;
 }
 
@@ -163,8 +166,8 @@ button:hover{
   border: 1px solid #C8A35F;
 }
 
-.hero__title {
-  margin-bottom: 45px;
+.hero__text {
+  margin-top: 30px;
 }
 
 /* hero end */
@@ -483,6 +486,7 @@ footer{
   line-height: 14px;
 }
 
+
 /* footer end */
 
 /* pop-up style */
@@ -601,38 +605,42 @@ footer{
 
 /* about start */
 
-.first_section {
-  padding: 80px 0 80px 0;
-  background: #393F47;
+.additional-page {
+  padding: 40px 0;
+  background: none;
+  background-color: #393F47;
+  margin-bottom: 120px;
 }
 
-.first_section {
+
+
+.description_page {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  margin-bottom: 50px;
 }
 
-.first_section__left {
-  max-width: 50%;
+.description__left {
+  max-width: 45%;
   z-index: 2;
 }
 
-.first_section__titlte {
+.description__titlte {
   margin-bottom: 30px;
 }
 
-.first_section__info {
+.description__info {
   margin-bottom: 30px; 
 }
 
-.first_section__img {
+.description__img {
   z-index: 2;
-  max-width: 50%;
+  max-width: 45%;
   height: 50%;
 }
 
-.first_section__background {
+.description__background {
   position: absolute;
   width: 410px;
   height: 507px;
@@ -664,10 +672,11 @@ footer{
 .employes__img {
   width: 250px;
   height: 370px;
+  object-fit: cover;
 }
 
 .feedback {
-  padding: 40px 0 170px 0;
+  padding: 40px 0 100px 0;
 }
 
 .feedback__header {
@@ -685,9 +694,13 @@ footer{
 
 .feedback__item {
   width: 30%;
-  padding: 5px 25px;
+  padding: 10px 25px 25px 25px;
   background-color: #393F47;
   border: 2px solid #dbb369;
+}
+
+.services-page {
+  padding: 0;
 }
 
 /* about-us end */
