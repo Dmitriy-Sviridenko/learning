@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Logistick</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
@@ -20,21 +21,26 @@
         <a href="tel:+7(812)344-56-65" class="contact__phone">+7 (812) 344-56-65</a>
       </div>
       
-      
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="index.html" class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="services.html" class="nav__link">Услуги</a>
-        </li>
-        <li class="nav__item">
-          <a href="about.html" class="nav__link">О компании</a>
-        </li>
-        <li class="nav__item">
-          <a href="contacts.html" class="nav__link">Контакты</a>
-        </li>
-      </ul>
+      <nav class="header__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="services.html" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="about.html" class="nav__link">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="contacts.html" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="burger" aria-label="Open menu" aria-expanded="false">
+        <span class="burger__line"></span>
+      </button>
     </div>
   </header>
 
@@ -83,16 +89,36 @@
         </button>
       </div>
       <div class="services__content">
-        <p class="services__info" id="tab_1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, omnis eius porro veritatis repellendus molestiae temporibus necessitatibus sint? Velit cumque vel facere. Aliquid unde suscipit error tempore. Quisquam, veritatis distinctio.
-          Ipsum ea, hic voluptas neque unde in adipisci, repudiandae sit incidunt perferendis pariatur dolor laborum iusto sapiente accusamus tempora molestias vitae, atque cumque corporis. Asperiores vitae dolore molestias aut itaque.
-          Quos facilis minima saepe voluptates ullam totam voluptatum, numquam, tempora earum facere ipsam asperiores voluptatibus praesentium? Ex sit quisquam qui quo dolorum quae nemo fugit quia iure nam. Repudiandae, beatae?
-          Quis, vel, alias quia, eum harum natus ex consequatur esse atque nobis quas suscipit illo minima dolor saepe tempore impedit facere iste obcaecati aperiam sit odit quidem! Quod, porro vero.</p>
-        <p class="services__info" id="tab_2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure, omnis eius porro veritatis repellendus molestiae temporibus necessitatibus sint? Velit cumque vel facere. Aliquid unde suscipit error tempore. Quisquam, veritatis distinctio.
-        Ipsum ea, hic voluptas neque unde in adipisci, repudiandae sit incidunt perferendis pariatur dolor laborum iusto sapiente accusamus tempora molestias vitae, atque cumque corporis. Asperiores vitae dolore molestias aut itaque.
-        Quos facilis minima saepe voluptates ullam totam voluptatum, numquam, tempora earum facere ipsam asperiores voluptatibus praesentium? Ex sit quisquam qui quo dolorum quae nemo fugit quia iure nam. Repudiandae, beatae?
-        Quis, vel, alias quia, eum harum natus ex consequatur esse atque nobis quas suscipit illo minima dolor saepe tempore impedit facere iste obcaecati aperiam sit odit quidem! Quod, porro vero.</p>
-        <p class="services__info" id="tab_3">321Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error mollitia tempore odit ducimus dolore excepturi modi, sapiente, voluptate doloremque eos quo repudiandae quis. Excepturi, distinctio voluptatum sint minus aperiam consequatur.</p>
-        <p class="services__info" id="tab_4">43231orem, ipsum dolor sit amet consectetur adipisicing elit. Error mollitia tempore odit ducimus dolore excepturi modi, sapiente, voluptate doloremque eos quo repudiandae quis. Excepturi, distinctio voluptatum sint minus aperiam consequatur.</p>
+        <p class="services__info" id="tab_1">Услуги грузоперевозок, в том числе с использованием различных видов городского наземного транспорта.
+          Например, на сайте компании «ЭлитТранс» можно посмотреть примерный маршрут грузоперевозки из г. Новосибирска в г. Омск и обратно.
+          Для этого необходимо нажать кнопку «Рассчитать маршрут».
+          Далее откроется страница с перечнем услуг и стоимостью каждой из них.
+          В разделе «Тарифы» также можно ознакомиться с информацией о стоимости перевозки.
+          Помимо этого, там размещена информация о сроках доставки груза.</p>
+        <p class="services__info" id="tab_2">Выполним любые работы, в том числе демонтаж.
+          Качественно и в срок.
+          А так же: - разнорабочие; - подсобные рабочие; - грузчики; - уборка снега и мусора; - земляные работы; - укладка
+          Грузчики-разнорабочие, разнорабочие на стройку, грузчики на склад, грузчик
+          Услуги грузчиков в Ростове-на-Дону.
+          Любые виды работ.
+          Работаем с частными лицами и организациями, заключаем договора.
+          Предлагаем услуги разнорабочих.
+          Рабочие на стройку.
+          Разнорабочии на склад.
+          Подсобные рабочие
+          Грузчик на склад</p>
+        <p class="services__info" id="tab_3">уборка участков после строительства домов
+          После окончания строительства дома на участке остаются кучи мусора, строительных материалов и отработанной почвы.
+          И здесь важно не только вовремя вывезти отходы, но и быстро и правильно убрать участок.
+          Ведь именно от этого зависит, сколько времени вы потратите на уборку участка после строительства.
+          Уборка участка после работ по строительству
+          В первую очередь, после окончания строительных работ, необходимо убрать строительный мусор.</p>
+        <p class="services__info" id="tab_4">вывоз мусора Свалки в окрестностях города не имеют права на существование.
+          Поэтому мы, как жители, должны проявлять заботу о чистоте и порядке вокруг нас.
+          В этом разделе вы найдете полезную информацию о том, как правильно организовать вывоз твердых бытовых отходов.
+          Как выбрать компанию для вывоза мусора?
+          Вывоз мусора в СПб и Ленинградской области - это очень ответственное задание.
+          Ведь от того, насколько профессионально будет выполнена эта работа, зависит и ваше здоровье, и здоровье окружающих вас людей.</p>
       </div>
     </div>
     
@@ -152,7 +178,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button pop-up__button">Заказать</button>
+          <button class="btn pop-up__button">Заказать</button>
         </div>
 
         <div class="car__item">
@@ -164,7 +190,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button pop-up__button">Заказать</button>
+          <button class="btn pop-up__button">Заказать</button>
         </div>
 
         <div class="car__item">
@@ -176,7 +202,7 @@
           <p class="cars__dimensions">Длина: 3.2 м, Высота: 2.2 м, Ширина: 2 м</p>
           <p class="cars__volume">14 м3</p>
           <p class="cars__price">700 ₽ / час</p>
-          <button class="cars__button pop-up__button">Заказать</button>
+          <button class="btn pop-up__button">Заказать</button>
         </div>
       </div>
     </div>
@@ -273,5 +299,6 @@
   </div>
 
  <script src="js/scipt.js"></script> 
+ <script src="js/burger-menu.js"></script> 
 </body>
 </html>
