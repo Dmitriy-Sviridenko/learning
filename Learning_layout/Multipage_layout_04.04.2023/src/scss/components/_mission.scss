@@ -5,6 +5,7 @@
     --mission-gap: 94px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 27px;
     gap: 188px;
     gap: calc(var(--mission-gap) * 2);
   }
@@ -64,7 +65,7 @@
 
 .know-form {
   position: relative;
-
+  top: 92px;
   border-radius: 4px;
   padding: 48px 60px;
   box-shadow: 
