@@ -51,5 +51,3 @@ document.querySelector(".portfolio-section__next").addEventListener("click", () 
   nextActiveSlide.classList.add("slider-visible");
   nextNextActiveSlide.classList.add("slider-visible");
 });
-
-
