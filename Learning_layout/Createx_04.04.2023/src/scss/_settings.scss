@@ -58,6 +58,11 @@ a {
   padding: 0;
 }
 
+.centered {
+  width: 100%;
+  text-align: center;
+}
+
 .input-reset {
   -webkit-appearance: none;
   appearance: none;
@@ -88,6 +93,17 @@ a {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1260px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -194,5 +210,61 @@ a {
 
 .section-offset {
   padding-top: 120px;
+}
+
+.custom-checkbox {
+  &__input {
+    position: absolute;
+    opacity: 0;
+  }
+
+  &__text {
+    display: inline-block;
+    position: relative;
+    padding-left: 27px;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--color-gray);
+  }
+
+  &__text::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 2px;
+    display: inline-block;
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    width: 16px;
+    height: 16px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__text::after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/check.svg);
+    background-position: center;
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  &__input:checked + &__text::before {
+    background-color: var(--color-primary);
+  }
+
+  &__input:checked + &__text::after {
+    opacity: 1;
+  }
+
+  &__input:focus + &__text {
+    outline: 3px solid var(--color-primary); 
+  }
 }
 
