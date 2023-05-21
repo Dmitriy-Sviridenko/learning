@@ -11,9 +11,9 @@
 }
 
 .services-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: var(--grid-gap);
+  &__item {
+    grid-column: 3 span;
+  }
 }
 
 .services-item { 
@@ -22,14 +22,14 @@
   padding: 0 10px;
   padding-top: 87px;
   padding-bottom: 90px; 
-  border: 1px solid #E5E8ED;
+  border: 1px solid var(--color-light);
   border-radius: 4px;
   box-shadow: 
     0px 80px 80px -20px rgba(154, 156, 165, 0.08), 
     0px 30px 24px -10px rgba(154, 156, 165, 0.05), 
     0px 12px 10px -6px rgba(154, 156, 165, 0.04), 
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
-  background: #e5e8ed;
+  background: var(--color-light);
 
   &::before {
     content: "";

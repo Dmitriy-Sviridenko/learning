@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 27px;
-    gap: 188px;
     gap: calc(var(--mission-gap) * 2);
   }
 
