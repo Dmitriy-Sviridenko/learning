@@ -1,7 +1,15 @@
 .pricing {
+  position: relative;
   padding-top: 80px;
   padding-bottom: 40px;
   background-color: var(--color-athens);
+
+  &__decorate {
+    position: absolute;
+    left: -8px;
+    top: 0;
+  }
+
   &__descr {
     margin-bottom: 60px;
   }

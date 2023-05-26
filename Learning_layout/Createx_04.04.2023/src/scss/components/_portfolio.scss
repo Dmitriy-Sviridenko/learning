@@ -1,0 +1,40 @@
+.portfolio {
+
+}
+
+.portfolio-tabs-nav {
+  --gap:20px;
+  @include flex-v-center;
+  &__item {
+    width: calc((100% - (var(--gap) * 4)) / 5);
+    &:not(:last-child){
+      margin-right: var(--gap)
+    }
+  }
+
+  &__btn {
+    @include flex-column-center;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 
+    0 60px 80px -20px rgba(255, 90, 48, 0.16), 
+    0 26px 24px -10px rgba(255, 90, 48, 0.1), 
+    0 12px 10px -6px rgba(255, 90, 48, 0.08), 
+    0 4px 4px -4px rgba(30, 33, 44, 0.05);
+    
+    background-color: var(--color-light);
+  }
+
+  &__icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+  }
+}
+
+.portfolio-tabs {
+  &__item {
+    grid-column: 4 span;
+  }
+}
