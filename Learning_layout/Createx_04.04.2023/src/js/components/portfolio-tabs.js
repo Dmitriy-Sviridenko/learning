@@ -1,56 +1,82 @@
-const portfolioTabsNav = document.querySelector(".portfolio-tabs-nav");
-const portfolioTabsBtns = document.querySelectorAll(".portfolio-tabs-nav__btn");
-const portfolioTabsItems = document.querySelectorAll(".portfolio-tabs__item");
-const portfolioTabsItemsVisible = document.querySelectorAll(".portfolio-tabs__item--visible");
-const loadMore = document.querySelector(".portfolio-more");
+const portfolioTabsNav = document.querySelector('.portfolio-tabs-nav');
+const portfolioTabsBtns = document.querySelectorAll('.portfolio-tabs-nav__btn');
+const portfolioTabsItems = document.querySelectorAll('.portfolio-tabs__item');
+const portfolioTabsItemsVisible = document.querySelectorAll('.portfolio-tabs__item--visible');
+const loadMore = document.querySelector('.portfolio-more');
+const maxItems = 9;
 
-const isLoadMoreNeeded = (selector) => {
-  if (selector.length <= 9 ) {
-    loadMore.style.display = "none";
-  } else {
-    loadMore.style.display = "inline-flex";
-  }
-}
+if (portfolioTabsNav) {
+  const isLoadMoreNeeded = (selector) => {
+    if (selector.length <= maxItems) {
+      loadMore.style.display = 'none';
+    } else {
+      loadMore.style.display = 'inline-flex';
+    }
+  };
 
-portfolioTabsNav.addEventListener("click", (e) => {
-  const target = e.target;
+  const hideMoreItems = (selector) => {
+    if (selector.length > maxItems) {
+      const arr = Array.from(selector);
+      const hiddenItems = arr.slice(maxItems, selector.length);
 
-  if  (target.classList.contains("portfolio-tabs-nav__btn")) {
-    const path = target.dataset.path;
+      hiddenItems.forEach(el => {
+        el.classList.remove('portfolio-tabs__item--visible');
+        el.classList.remove('portfolio-tabs__item--visible-more');
+      });
+    }
+  };
 
-    portfolioTabsBtns.forEach(el => { el.classList.remove("portfolio-tabs-nav__btn--active")});
-    target.classList.add("portfolio-tabs-nav__btn--active");
-    
-    portfolioTabsItems.forEach(el => {
-      el.classList.remove('portfolio-tabs__item--visible');
-    });
+  portfolioTabsNav.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('portfolio-tabs-nav__btn')) {
+      const path = target.dataset.path;
 
-    (document.querySelectorAll(`[data-target="${path}"]`)).forEach(el => {
-      el.closest('.portfolio-tabs__item').classList.add('portfolio-tabs__item--visible');
-    });
+      portfolioTabsBtns.forEach(el => { el.classList.remove('portfolio-tabs-nav__btn--active')});
+      target.classList.add('portfolio-tabs-nav__btn--active');
 
-    isLoadMoreNeeded(document.querySelectorAll(`[data-target="${path}"]`))
-
-    if (path == "all") {
       portfolioTabsItems.forEach(el => {
-        el.classList.add('portfolio-tabs__item--visible');
+        el.classList.remove('portfolio-tabs__item--visible');
+        el.classList.remove('portfolio-tabs__item--visible-more');
       });
 
-      isLoadMoreNeeded(document.querySelectorAll("portfolio-tabs__item--visible"));
+      document.querySelectorAll(`[data-target="${path}"]`).forEach(el => {
+        el.closest('.portfolio-tabs__item').classList.add('portfolio-tabs__item--visible');
+      });
+
+      isLoadMoreNeeded(document.querySelectorAll(`[data-target="${path}"]`));
+      hideMoreItems(document.querySelectorAll('.portfolio-tabs__item--visible'));
+
+      if (path == 'all') {
+
+        portfolioTabsItems.forEach(el => {
+          el.classList.add('portfolio-tabs__item--visible');
+        });
+
+        isLoadMoreNeeded(document.querySelectorAll('.portfolio-tabs__item--visible'));
+        hideMoreItems(document.querySelectorAll('.portfolio-tabs__item--visible'));
+      }
     }
-  }
-});
+  });
 
-isLoadMoreNeeded(portfolioTabsItemsVisible);
+  hideMoreItems(portfolioTabsItems);
+  isLoadMoreNeeded(portfolioTabsItemsVisible);
 
-loadMore.addEventListener("click",(e) => {
-  const visibleItems = document.querySelectorAll(".portfolio-tabs__item--visible");
-  const path = document.querySelector(".portfolio-tabs-nav__btn--active").dataset.path;
-  if (path == "all") {
-    
-  } else {
-    (document.querySelectorAll(`[data-target="${path}"]`)).forEach(el => {
-      el.closest('.portfolio-tabs__item').classList.add('portfolio-tabs__item--visible-more');
-    });
-  }
-});
+  loadMore.addEventListener('click', (e) => {
+    const visibleItems = document.querySelectorAll('.portfolio-tabs__item--visible');
+
+    const path = document.querySelector('.portfolio-tabs-nav__btn--active').dataset.path;
+    console.log(path)
+
+    if (path == 'all') {
+      portfolioTabsItems.forEach(el => {
+        el.classList.add('portfolio-tabs__item--visible-more');
+        loadMore.style.display = 'none';
+      });
+    } else {
+      document.querySelectorAll(`[data-target="${path}"]`).forEach(el => {
+        el.closest('.portfolio-tabs__item').classList.add('portfolio-tabs__item--visible-more');
+      });
+      loadMore.style.display = 'none';
+    }
+  });
+}
