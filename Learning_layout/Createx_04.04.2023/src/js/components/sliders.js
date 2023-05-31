@@ -53,7 +53,7 @@ if (portSlider) {
     nextActiveSlide.classList.add("slider-visible");
     nextNextActiveSlide.classList.add("slider-visible");
   });
-}
+};
 
 if (relatedSlider) {
   const relatedProjSlider = new Swiper(relatedSlider, {
@@ -105,9 +105,7 @@ if (relatedSlider) {
     nextActiveSlide.classList.add("slider-visible");
     nextNextActiveSlide.classList.add("slider-visible");
   });
-}
-
-
+};
 
 const testimonialsSlider = new Swiper(".testimonials__items", {
   slidesPerView: 1,
@@ -119,3 +117,28 @@ const testimonialsSlider = new Swiper(".testimonials__items", {
     prevEl: '.testimonials__prev',
   },
 });
+
+const workImages = document.querySelector(".work-images-slider");
+
+if (workImages) {
+  const workSlider = new Swiper(".work-images-nav", {
+    spaceBetween: 20,
+    slidesPerView: 10,
+    freeMode: true,
+    watchSlidesProgress: true,
+  });
+  const workSliderNav = new Swiper(workImages, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".work-images__next",
+      prevEl: ".work-images__prev",
+    },
+    thumbs: {
+      swiper: workSlider,
+    },
+  });
+}
+
+
+
