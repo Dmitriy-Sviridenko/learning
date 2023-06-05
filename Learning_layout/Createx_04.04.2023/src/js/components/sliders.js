@@ -2,6 +2,8 @@ const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue("--grid-gap"));
 const portSlider = document.querySelector('.portfolio-section__items');
 const relatedSlider = document.querySelector('.related-projects__items');
+const workImages = document.querySelector(".work-images-slider");
+const historySlider = document.querySelector(".history-slider");
 
 if (portSlider) {
   const portfolioSlider = new Swiper(portSlider, {
@@ -118,8 +120,6 @@ const testimonialsSlider = new Swiper(".testimonials__items", {
   },
 });
 
-const workImages = document.querySelector(".work-images-slider");
-
 if (workImages) {
   const workSlider = new Swiper(".work-images-nav", {
     spaceBetween: 20,
@@ -139,6 +139,44 @@ if (workImages) {
     },
   });
 }
+
+if (historySlider) {
+  const workSlider = new Swiper(historySlider, {
+    spaceBetween: 20,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: '.history__next',
+      prevEl: '.history__prev',
+    },
+  });
+
+  workSlider.on('slideChange', function () {
+    historyBtns.forEach(el => {
+      el.classList.remove("history-nav__btn--active");
+    });
+
+    document.querySelector(`.history-nav__btn[data-index="${workSlider.realIndex}"]`).classList.add("history-nav__btn--active")
+  });
+
+  const historyBtns = document.querySelectorAll(".history-nav__btn")
+
+  historyBtns.forEach((el, idx) => {
+    el.setAttribute("data-index", idx);
+
+    el.addEventListener("click", (e) => {
+      const index = e.currentTarget.dataset.index;
+
+      historyBtns.forEach(el => {
+        el.classList.remove("history-nav__btn--active");
+      });
+
+      e.currentTarget.classList.add("history-nav__btn--active")
+
+      workSlider.slideTo(index);
+    });
+  });
+};
+
 
 
 
