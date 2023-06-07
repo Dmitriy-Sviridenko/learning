@@ -1,6 +1,6 @@
 .position-content {
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 58px;
 
   &__left {
     grid-column: 7 span;
@@ -80,5 +80,39 @@
     padding: 11px 30px;
     font-size: 14px;
     letter-spacing: 0.5px;
+  }
+}
+
+.position-looking {
+  width: 390px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 47px;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--color-storm);
+  }
+
+  &__btn {
+    &--subs {
+      margin-right: 22px;
+      padding-right: 44px;
+      padding-left: 44px;
+    }
+
+    &--send {
+      padding-left: 54px;
+      padding-right: 54px;
+    }
   }
 }
