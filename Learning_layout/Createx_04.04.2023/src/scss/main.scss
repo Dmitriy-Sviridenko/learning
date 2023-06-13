@@ -43,6 +43,12 @@
 @import "./components/hero-news";
 @import "./components/categories";
 @import "./components/post";
+@import "./components/post-comments";
+@import "./components/post-form";
+@import "./components/contacts-form";
+@import "./components/contacts-info";
+
+
 
 // подключения компонентов страницы (маленькие компоненты)
 @import "./components/nav";
@@ -53,4 +59,5 @@
 @import "./components/portfolio-item";
 @import "./components/work-images";
 @import "./components/news-article";
+@import "./components/comment";
 
