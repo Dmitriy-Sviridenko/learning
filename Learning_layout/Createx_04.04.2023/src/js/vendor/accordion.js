@@ -57,3 +57,4 @@ class GraphAccordion {
 		this.options.isClose(this);
 	}
 }
+

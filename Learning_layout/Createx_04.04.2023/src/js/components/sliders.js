@@ -178,5 +178,3 @@ if (historySlider) {
 };
 
 
-
-
