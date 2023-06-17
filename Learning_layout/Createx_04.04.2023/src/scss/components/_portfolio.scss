@@ -94,6 +94,33 @@
     object-fit: cover;
     color: inherit;
     fill: currentColor;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 }
 
+.portfolio-tabs-nav__btn {
+
+  &:hover {
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    .portfolio-tabs-nav__text {
+      color: var(--color-ebony);
+    }
+  }
+}

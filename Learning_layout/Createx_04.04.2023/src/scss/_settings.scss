@@ -210,11 +210,13 @@ a {
     &:hover {
       border-color: var(--color-primary);
       background-color: var(--color-primary);
+      color: var(--color-light);
     }
 
     &:active {
       border-color: var(--color-primary);
       background-color: var(--color-primary);
+      color: var(--color-light);
     }
   }
 }

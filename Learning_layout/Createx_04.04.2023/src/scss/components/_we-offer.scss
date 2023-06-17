@@ -30,6 +30,11 @@
       padding-left: 44px;
       padding-right: 20px;
       text-align: left;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
     }
 
     .accordion__title {

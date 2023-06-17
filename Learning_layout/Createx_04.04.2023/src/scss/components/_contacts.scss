@@ -41,7 +41,6 @@
 
   &__checkbox {
     max-width: 315px;
-
     .custom-checkbox__text {
       font-size: 16px;
       line-height: 160%;
@@ -90,6 +89,11 @@
 
   .choices {
     width: 100%;
+  }
+
+  .is-focused {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
   }
 
   .choices__inner {

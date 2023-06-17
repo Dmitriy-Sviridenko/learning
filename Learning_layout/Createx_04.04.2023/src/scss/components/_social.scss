@@ -20,6 +20,20 @@
       fill: var(--color-light);
       object-fit: cover;
       opacity: 0.6;
+      transition: opacity 0.3s ease-in-out;
+  
+      &:hover {
+        opacity: 1;
+      }
+  
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
     }
   }
 }
