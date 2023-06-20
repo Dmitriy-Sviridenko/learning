@@ -35,7 +35,7 @@
   }
 
   &__btn {
-    display: none;
+    margin-bottom: -68px;
     margin-top: 24px;
     border: 1px solid currentColor;
     border-radius: 4px;
@@ -44,7 +44,9 @@
     font-size: 14px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: var(--color-primary)
+    color: var(--color-primary);
+    transition: 0.3s ease-in-out;
+    will-change: margin;
   }
 
   &:focus {
@@ -53,11 +55,8 @@
   }
 
   &:hover {
-    transform: translateY(-3px);
-  }
-
-  &:active {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary);
+    .portfolio-item__btn {
+      margin-bottom: 0;
+    }
   }
 }
