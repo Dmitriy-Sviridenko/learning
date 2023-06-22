@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -364,3 +365,50 @@ a {
   gap: var(--grid-gap);
 }
 
+.to-top {
+  position: fixed;
+  right: calc((100% - 1230px) /2);
+  bottom: 80px;
+  z-index: 50;
+  display: flex;
+  align-items: flex-end;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  &__text {
+    margin-right: 16px;;
+    font-size: 14px;
+    line-height: 150%;
+    text-shadow: 3px 3px 11px rgba(150, 150, 150, 1);
+    text-transform: uppercase;
+    color: var(--color-light);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-primary);
+    transition: background-color 0.3s ease-in-out;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      object-fit: cover;
+      fill: var(--color-light);
+    }
+
+    &:hover {
+      background-color: var(--color-active);
+    }
+  }
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
