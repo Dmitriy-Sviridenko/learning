@@ -1,8 +1,16 @@
 const toTop = document.querySelector(".to-top");
-const heroHeightn = document.querySelector(".hero").offsetHeight;
+let heroHeight;
+
+if (document.querySelector(".hero")) {
+  heroHeight = document.querySelector(".hero").offsetHeight;
+};
+
+if (document.querySelector(".page-hero")) {
+  heroHeight = document.querySelector(".page-hero").offsetHeight;
+}
 
 const isVisivleToTop = (y = 0) => {
-  if (y >= heroHeightn) {
+  if (y >= heroHeight) {
     toTop.classList.add("to-top--active");
   } else {
     toTop.classList.remove("to-top--active");

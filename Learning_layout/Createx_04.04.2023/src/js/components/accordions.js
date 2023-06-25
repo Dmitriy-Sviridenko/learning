@@ -1,5 +1,3 @@
-
-
 class GraphAccordion {
 	constructor(selector, options) {
 		let defaultOptions = {
