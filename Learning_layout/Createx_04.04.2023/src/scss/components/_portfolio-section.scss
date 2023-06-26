@@ -18,6 +18,11 @@
     max-width: 710px;
     padding-bottom: 13px;
     color: var(--color-ebony);
+
+    @include tablet {
+      font-size: 40px;
+      line-height: 55px;
+    }
   }
 
   &__learn {

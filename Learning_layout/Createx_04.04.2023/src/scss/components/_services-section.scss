@@ -13,6 +13,10 @@
 .services-list {
   &__item {
     grid-column: 3 span;
+
+    @include tablet {
+      grid-column: 6 span;
+    }
   }
 }
 
@@ -86,6 +90,10 @@
     text-align: center;
     color: var(--color-ebony);
     transition: color 0.3s ease-in-out;
+
+    @include minidesk {
+      font-size: 18px;
+    }
   }
 
   &--construct {
