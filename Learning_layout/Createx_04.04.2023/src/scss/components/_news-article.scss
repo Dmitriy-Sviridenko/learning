@@ -21,9 +21,15 @@
     color: var(--color-gray)
   }
 
+
   &__image--small{
     height: 156px;
     width: 456px;
+
+    @include tablet {
+      width: 100%;
+      object-fit: cover;
+    }
   }
 
   &__meta {

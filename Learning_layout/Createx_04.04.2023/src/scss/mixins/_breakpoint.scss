@@ -24,7 +24,7 @@
   }
 }
 
-@mixin small-tablet {
+@mixin minitablet {
   @media (max-width: (768px)) {
     @content;
   }
