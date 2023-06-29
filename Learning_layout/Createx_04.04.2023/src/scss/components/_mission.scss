@@ -101,6 +101,10 @@
   &__content {
     display: flex;
     align-items: flex-end;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__field {
@@ -109,5 +113,10 @@
 
   &__btn {
     padding: 11px 29px;
+  }
+
+  @include mobile {
+    top: initial;
+    padding: 10px 15px;
   }
 }

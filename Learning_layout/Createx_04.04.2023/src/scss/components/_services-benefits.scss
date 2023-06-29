@@ -118,7 +118,15 @@
         .form-field__input {
           width: 100%;
         }
+
+        @include mobile {
+          width: 100%;
+        }
       }
+    }
+
+    @include mobile {
+      display: block;
     }
   }
 
@@ -128,5 +136,10 @@
 
   &__btn {
     padding: 11px 29px;
+  }
+
+  @include mobile {
+    top: initial;
+    padding: 10px 15px;
   }
 }

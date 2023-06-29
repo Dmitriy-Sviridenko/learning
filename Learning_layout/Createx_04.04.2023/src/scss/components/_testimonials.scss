@@ -8,6 +8,11 @@
     @include tablet  {
       max-width: 450px;
     }
+
+    @include mobile  {
+      width: 100%;
+      max-width: none;
+    }
   };
 
   &__image {
