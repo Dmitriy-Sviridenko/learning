@@ -8,6 +8,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--about-mission-gap) * 2);
+
+    @include tablet {
+      --about-mission-gap: 30px;
+    }
+  
+    @include minitablet {
+      --about-mission-gap: 10px;
+    }
+  
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -43,6 +55,12 @@
 
     &--comfort {
       background-image: url("../img/comfort.svg");
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 
