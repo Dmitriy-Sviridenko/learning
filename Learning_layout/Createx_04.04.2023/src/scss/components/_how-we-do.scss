@@ -32,13 +32,21 @@
         position: absolute;
         right: 0;
         top: 29px;
-        height: 1px;
+        height: 5px;
         width: 75%;
         background-image: url("../img/how-we-do-line.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @include tablet {
+          display: none;
+        }
       }
+    }
+
+    @include tablet {
+      grid-column: 6 span;
     }
   }
 
