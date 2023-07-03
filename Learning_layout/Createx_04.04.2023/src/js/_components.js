@@ -8,3 +8,4 @@ import './vendor/graph-modal.min';
 import './components/to-top';
 import './components/video';
 import './components/burger';
+import './components/current-page';

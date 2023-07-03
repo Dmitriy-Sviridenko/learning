@@ -101,6 +101,10 @@
       width: 364px;
     }
 
+    input, select, textarea{
+      color: var(--color-light);
+    }
+
     .form-field__input {  
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-top-right-radius: 0;

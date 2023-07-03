@@ -38,6 +38,10 @@
     svg {
       fill: var(--color-storm);
       opacity: 1;
+
+      &:hover {
+        fill: var(--color-active);
+      }
     }
   }
 
