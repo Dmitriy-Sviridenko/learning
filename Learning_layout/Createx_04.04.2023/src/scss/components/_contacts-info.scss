@@ -38,10 +38,7 @@
     svg {
       fill: var(--color-storm);
       opacity: 1;
-
-      &:hover {
-        fill: var(--color-active);
-      }
+      transition: fill 0.2s ease-in-out;
     }
   }
 
@@ -139,3 +136,30 @@
     color: var(--color-active);
   }
 }
+
+.whatsup-image:hover {
+  fill: rgb(46, 173, 7);
+}
+
+.telegram-image:hover {
+  fill: rgb(44, 90, 216);
+}
+
+.facebook-image:hover {
+  fill: rgb(16, 71, 189);
+}
+
+.twitter-image:hover {
+  fill: rgb(16, 231, 221);
+}
+
+.youtube-image:hover {
+  fill: rgb(223, 13, 13);
+}
+
+
+
+
+
+
+
