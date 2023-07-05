@@ -24,6 +24,10 @@
 
     &:not([href]) {
       color: #9a9ca5;
+
+      &:hover {
+        color: #9a9ca5;
+      }
     }
 
     &:focus {

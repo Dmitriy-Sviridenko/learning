@@ -96,6 +96,11 @@
       line-height: 36px;
       letter-spacing: 0.5px;
       text-transform: uppercase;
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-light);
+      }
       
       &:focus {
         outline: 2px solid var(--color-primary);

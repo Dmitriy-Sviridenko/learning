@@ -52,6 +52,11 @@
     transition: 0.3s ease-in-out;
     will-change: margin;
 
+    &:hover {
+      color: var(--color-light);
+      background-color: var(--color-primary);
+    }
+
     @include minitablet {
       margin-bottom: 0;
     }
