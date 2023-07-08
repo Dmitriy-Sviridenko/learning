@@ -16,13 +16,20 @@
     }
 
     @include mobile {
-      max-width: none;
+      max-width: 100%;
+      text-align: center;
       margin-right: 0;
       margin-bottom: 10px;
     }
   }
 
+  &__btn {
+    @include mobile {
+      align-items: center;
+    }
+  }
+
   @include mobile {
-    display: block;
+    flex-wrap: wrap;
   }
 }

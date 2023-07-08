@@ -26,12 +26,18 @@ if (portSlider) {
       prevEl: '.portfolio-section__prev',
     },
 
+    autoplay: {
+      delay: 2000,
+    },
+    
     breakpoints: {
       576: {
         slidesPerView: 2,
+        autoplay: false,
       },
       768: {
         slidesPerView: 3,
+        autoplay: false,
       }
     }
   });
@@ -71,12 +77,18 @@ if (relatedSlider) {
     slidesPerView: 1,
     spaceBetween: gap,
 
+    autoplay: {
+      delay: 2000,
+    },
+
     breakpoints: {
       576: {
         slidesPerView: 2,
+        autoplay: false,
       },
       768: {
         slidesPerView: 3,
+        autoplay: false,
       }
     },
     
@@ -131,11 +143,21 @@ const testimonialsSlider = new Swiper(".testimonials__items", {
   slidesPerView: 1,
   spaceBetween: gap,
   loop: true,
+
+  autoplay: {
+    delay: 2000,
+  },
  
   navigation: {
     nextEl: '.testimonials__next',
     prevEl: '.testimonials__prev',
   },
+
+  breakpoints: {
+    576: {
+      autoplay: false,
+    },
+  }  
 });
 
 if (workImages) {
@@ -144,12 +166,19 @@ if (workImages) {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesProgress: true,
+
+    autoplay: {
+      delay: 2000,
+    },
+
     breakpoints: {
       576: {
         slidesPerView: 6,
+        autoplay: false,
       },
       768: {
         slidesPerView: 10,
+        autoplay: false,
       }
     },
   });

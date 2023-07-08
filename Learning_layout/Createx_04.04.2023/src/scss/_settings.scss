@@ -194,11 +194,6 @@ a {
   &--fill {
     background-color: var(--color-primary);
 
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
-    }
-
     &:hover {
       background-color: var(--color-active);
     }
@@ -217,11 +212,6 @@ a {
     &-primary {
       color: var(--color-primary);
       border-color: var(--color-primary);
-    }
-
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
     }
 
     &:hover {
@@ -332,10 +322,6 @@ a {
   &__input:checked + &__text::after {
     opacity: 1;
   }
-
-  &__input:focus + &__text {
-    outline: 3px solid var(--color-primary); 
-  }
 }
 
 .custom-file {
@@ -358,10 +344,6 @@ a {
     background-size: 24px 24px;
     background-repeat: no-repeat;
     object-fit: contain;
-  }
-
-  &__input:focus + &__text {
-    outline: 3px solid var(--color-primary); 
   }
 }
 

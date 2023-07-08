@@ -49,7 +49,7 @@ new Swiper(".testimonials__reviews", {
       clickable: true,
     },
 
-    //прокрутка при помощи колеа мыши
+    //прокрутка при помощи колеcа мыши
     mousewheel: {
       sensitivity: 1,
     },

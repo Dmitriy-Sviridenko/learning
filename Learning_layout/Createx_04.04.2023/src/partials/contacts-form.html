@@ -6,7 +6,7 @@
     </p>
     <div class="contacts__content">
       <img class="contacts__image" src="img/contacts-image.jpg" alt="" aria-hidden="true">
-      <form action="#" class="form-contacts">
+      <form action="#" onsubmit="return false;" class="form-contacts">
         <div class="form-contacts__line">
           <label class="form-field form-field--gray form-contacts__field">
             <span class="form-field__caption">Name*</span>
@@ -66,9 +66,9 @@
             <input type="checkbox" class="custom-checkbox__input">
             <span class="custom-checkbox__text">I agree to receive communications from Createx Construction Bureau.</span>
           </label>
-          <button class="form-contacts__btn btn btn--fill" data-graph-animation="custom" data-graph-path="close-request">Send request</button>
+          <button type="submit" class="form-contacts__btn btn btn--fill" data-graph-animation="custom" data-graph-path="close-request">Send request</button>
         </div>
       </form>
     </div>
   </div>
-</section>
+</section>  

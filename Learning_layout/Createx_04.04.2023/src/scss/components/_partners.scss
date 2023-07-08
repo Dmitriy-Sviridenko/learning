@@ -25,13 +25,6 @@
     }
   }
 
-  &__link {
-    &:focus {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 2px;
-    }
-  }
-
   &--about {
     padding: 120px 0;
     background-color: var(--color-light);
@@ -39,5 +32,9 @@
     .partners__title {
       margin-bottom: 25px;
     }
+  }
+
+  @include mobile {
+    padding: 60px 0;
   }
 }

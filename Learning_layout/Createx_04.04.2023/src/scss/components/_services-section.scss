@@ -74,11 +74,6 @@
     transition: opacity 0.3s ease-in-out;
   }
 
-  &:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-  }
-
   &__content {
     @include flex-column-center;
     position: relative;
@@ -86,7 +81,6 @@
   }
 
   &__icon{
-    margin-bottom: 23px;
     width: 52px;
     height: 52px;
     fill: var(--color-primary);
