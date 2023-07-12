@@ -197,10 +197,6 @@ a {
     &:hover {
       background-color: var(--color-active);
     }
-
-    &:active {
-      background-color: var(--color-active);
-    }
   }
 
   &--stroke{
@@ -215,12 +211,6 @@ a {
     }
 
     &:hover {
-      border-color: var(--color-primary);
-      background-color: var(--color-primary);
-      color: var(--color-light);
-    }
-
-    &:active {
       border-color: var(--color-primary);
       background-color: var(--color-primary);
       color: var(--color-light);
@@ -256,6 +246,10 @@ a {
   &--center {
     text-align: center;
   }
+
+  @include mobile {
+    margin-bottom: 25px;
+  }
 }
 
 .section-offset {
@@ -266,7 +260,8 @@ a {
   }
 
   @include mobile {
-    margin-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -605,12 +600,14 @@ a {
 }
 
 .burger--active::before {
+  color: white;
   top: 50%;
   transform: rotate(45deg);
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
 }
 
 .burger--active::after {
+  color: white;
   top: 50%;
   transform: rotate(-45deg);
   transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;

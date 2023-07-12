@@ -20,6 +20,19 @@ const enScroll = () => {
   document.body.removeAttribute('data-position');
 }
 
+overlay.addEventListener("click", (e) => {
+  burger.classList.toggle("burger--active");
+  menu.classList.toggle("header__nav--active");
+  overlay.classList.toggle("overlay--active");
+
+  if (!burger.classList.contains("burger--active")) {
+    enScroll();
+  } else {
+    disScroll();
+  }
+});
+
+
 burger.addEventListener("click", (e) => {
   burger.classList.toggle("burger--active");
   menu.classList.toggle("header__nav--active");

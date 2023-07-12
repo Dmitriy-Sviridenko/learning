@@ -24,8 +24,6 @@ function adventuresCards () {
 
 adventuresCards()
 
-console.log(adventuresItems)
-console.log(addadventuresItems)
 
 adventuresBtn.addEventListener('click', () => { 
   adventuresItems += addadventuresItems;
@@ -56,7 +54,6 @@ new Swiper(".testimonials__reviews", {
 
 
     //колличество слайдов для показа
-    
     slidesPerView: 3,
     //колличество пролистываемых слайдов
     slidesPerGroup: 3,

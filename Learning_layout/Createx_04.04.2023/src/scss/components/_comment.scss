@@ -48,10 +48,6 @@
       &:hover {
         color: var(--color-active);
       }
-  
-      &:active {
-        color: var(--color-active);
-      }
     }
 
     * {
@@ -83,10 +79,6 @@
     }
 
     &:hover {
-      color: var(--color-active);
-    }
-
-    &:active {
       color: var(--color-active);
     }
   }

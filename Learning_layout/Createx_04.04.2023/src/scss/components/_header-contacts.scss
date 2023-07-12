@@ -52,12 +52,6 @@
     }
   }
 
-  &:active {
-    .contacts-link__value {
-      color: var(--color-active);
-    }
-  }
-
   &--call {
     background-image: url("../img/phone.svg");
   }

@@ -17,6 +17,10 @@
     @include minitablet {
       display: block;
     }
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
   }
 
   &__soc {
@@ -94,10 +98,6 @@
     &:hover {
       color: var(--color-active);
     }
-
-    &:active {
-      color: var(--color-active);
-    }
   }
 
   &__element {
@@ -113,16 +113,16 @@
   &__value {
     color: var(--color-ebony);
   }
+
+  @include mobile {
+    padding-bottom: 90px;
+  }
 }
 
 .contacts-info__value {
   transition: color 0.3s ease-in-out;
 
   &:hover {
-    color: var(--color-active);
-  }
-
-  &:active {
     color: var(--color-active);
   }
 }

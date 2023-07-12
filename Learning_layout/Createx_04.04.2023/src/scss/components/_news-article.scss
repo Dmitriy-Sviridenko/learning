@@ -46,10 +46,6 @@
     &:hover {
       color: var(--color-primary);
     }
-
-    &:active {
-      color: var(--color-active);
-    }
   }
 
   &--small {
@@ -104,9 +100,5 @@
 a.article-meta__item {
   &:hover {
     color: var(--color-primary);
-  }
-
-  &:active {
-    color: var(--color-active);
   }
 }

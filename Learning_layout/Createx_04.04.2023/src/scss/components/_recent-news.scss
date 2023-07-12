@@ -5,6 +5,10 @@
 
   &__title {
     margin-bottom: 58px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__list {

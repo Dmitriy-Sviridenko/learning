@@ -70,6 +70,10 @@
 
   &__list {
     margin-bottom: 260px;
+
+    @include mobile {
+      margin-bottom: 60px;
+    }
   }
 
   &__content {
@@ -107,6 +111,10 @@
     @include mobile {
       padding: 15px;
     }
+  }
+
+  @include mobile {
+    padding: 50px 0;
   }
 }
 

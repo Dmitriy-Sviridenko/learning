@@ -47,10 +47,6 @@
       color: var(--color-active);
     }
 
-    &:active {
-      color: var(--color-active);
-    }
-
     &--active {
       color: var(--color-primary);
       border-color: currentColor;
@@ -104,10 +100,6 @@
     }
 
     &:hover {
-      color: var(--color-active);
-    }
-
-    &:active {
       color: var(--color-active);
     }
 

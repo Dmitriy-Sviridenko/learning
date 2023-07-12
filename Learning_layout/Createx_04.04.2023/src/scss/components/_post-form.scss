@@ -44,4 +44,8 @@
       margin-bottom: 20px;
     }
   }
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
 }

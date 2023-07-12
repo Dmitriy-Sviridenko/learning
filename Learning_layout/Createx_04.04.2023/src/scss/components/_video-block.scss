@@ -54,10 +54,6 @@
       background-color: var(--color-active);
     }
 
-    &:active {
-      background-color: var(--color-active);
-    }
-
     &--played {
       opacity: 0;
       visibility: hidden;

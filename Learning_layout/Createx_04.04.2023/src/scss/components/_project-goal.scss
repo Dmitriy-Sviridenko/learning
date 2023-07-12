@@ -34,6 +34,10 @@
     line-height: 150%;
     color: var(--color-gray);
   }
+
+  @include mobile {
+    padding-bottom: 60px;
+  }
 }
 
 .project-info {

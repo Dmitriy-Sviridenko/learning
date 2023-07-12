@@ -159,10 +159,6 @@
       &:hover {
         color: var(--color-light);
       }
-  
-      &:active {
-        color: var(--color-light);
-      }
     }
   }
 
@@ -192,7 +188,11 @@
 
   &__item {
     &:not(:last-child){
-      margin-bottom: 4px;
+      margin-bottom: 4px; 
+
+      @include mobile {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -206,8 +206,8 @@
       color: var(--color-light);
     }
 
-    &:active {
-      color: var(--color-light);
+    @include mobile {
+      line-height: 140%;
     }
   }
 
