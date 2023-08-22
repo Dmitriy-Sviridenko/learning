@@ -41,11 +41,12 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="index.html#timing" class="animate-scroll">Расписание</a></li>
-                  <li><a href="index.html#sport" class="animate-scroll">Занятия</a></li>
-                  <li><a href="index.html#about" class="animate-scroll">О нас</a></li>
-                  <li><a href="index.html#review" class="animate-scroll">Отзывы</a></li>
-                  <li><a href="index.html#contact" class="animate-scroll">Контакты</a></li>
+                  <?php if(get_field('site_menu', "options")): ?>
+                  <?php while(has_sub_field('site_menu', "options")) : ?>
+                     <li><a href=<?php the_sub_field('site_menu_link'); ?>><?php the_sub_field('site_menu_name'); ?></a></li>
+                  <?php endwhile; ?>
+                  <?php endif; ?>
+
                   <li class="phone">
                      <a href="tel:<?php the_field("site_tel", "options"); ?>"><?php the_field("site_tel", "options"); ?></a>
                   </li>
