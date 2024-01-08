@@ -1,12 +1,8 @@
-let group = {
-  title: "Our Group",
-  students: ["John", "Pete", "Alice"],
 
-  showList() {
-    this.students.forEach(
-      student => alert(this.title + ': ' + student)
-    );
-  }
-};
+var array = [1, 1, 1, 2, 4, 4, 3]
 
-group.showList();
+
+const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
+
+console.log(findOdd(array));
