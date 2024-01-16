@@ -133,6 +133,59 @@ html, body {
   color: var(--header-text-color);
 }
 
+.header__nav {
+  margin-bottom: 86px;
+}
+
+.header__content {
+  text-align: center;
+}
+
+.header__title {
+  margin-bottom: 14px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 130%;
+  letter-spacing: -0.8px;
+  text-transform: capitalize;
+}
+
+.header__content p {
+  margin: 0 auto;
+  max-width: 606px;
+  font-size: 24px;
+  line-height: 160%;
+  opacity: 0.8;
+}
+
+.header__search {
+  margin: 45px auto 0;
+}
+
+.header__dot--sofa {
+  position: absolute;
+  left: 21.4492753623%;
+  top: 63.7209302326%;
+}
+
+.header__dot--vase {
+  position: absolute;
+  left: 8.2608695652%;
+  top: 70.1395348837%;
+}
+
+.header__dot--item {
+  position: absolute;
+  left: 57.4468085106%;
+  top: 72.6014760148%;
+}
+
+.header__dot--wall {
+  position: absolute;
+  left: 96.3829787234%;
+  top: 75.7380073801%;
+}
+
 .nav {
   display: grid;
   grid-template-columns: 2fr 8fr 2fr;
@@ -186,4 +239,65 @@ html, body {
   line-height: 25px;
   font-weight: 700;
   font-family: var(--font-cards);
+}
+
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 344px;
+  padding: 8px 8px 8px 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  border-radius: 42px;
+  border: 0.862px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+.search-form__imput {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+}
+.search-form__imput::-webkit-input-placeholder {
+  color: #FFF;
+  font-weight: 400;
+}
+.search-form__imput::-moz-placeholder {
+  color: #FFF;
+  font-weight: 400;
+}
+.search-form__imput:-ms-input-placeholder {
+  color: #FFF;
+  font-weight: 400;
+}
+.search-form__imput::-ms-input-placeholder {
+  color: #FFF;
+  font-weight: 400;
+}
+.search-form__imput::placeholder {
+  color: #FFF;
+  font-weight: 400;
+}
+
+.search-form__btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 24px;
+  background: var(--accent);
+}
+
+.info-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
 }
