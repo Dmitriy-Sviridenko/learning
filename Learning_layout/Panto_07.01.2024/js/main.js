@@ -5,6 +5,11 @@ const infoHints = document.querySelectorAll(".info-hint");
 for (let btn of infoBtns) {
   btn.addEventListener("click", function (e) {
     e.stopPropagation();
+    
+    for (let hint of infoHints) {
+      hint.classList.add("none");
+    };
+    
     this.parentNode.querySelector(".info-hint").classList.toggle("none");
   });
 }
@@ -88,5 +93,17 @@ for (let btn of tabsBtns) {
   });
 }
 
-//tab-contols__btn--active
+//Mobile Nav
 
+const mobileNavOpen = document.querySelector("#open-mobile-nav-btn");
+const mobileNavClose = document.querySelector("#close-mobile-nav-btn");
+const mobileNav = document.querySelector(".mobile-nav-wrapper");
+
+
+mobileNavOpen.onclick = function () {
+  mobileNav.classList.add("mobile-nav-wrapper--open");
+};
+
+mobileNavClose.onclick = function () {
+  mobileNav.classList.remove("mobile-nav-wrapper--open");
+}

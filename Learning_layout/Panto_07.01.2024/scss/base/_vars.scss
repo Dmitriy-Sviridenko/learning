@@ -26,3 +26,17 @@
       background-image: $image;
     }
 }
+
+@mixin tablet () {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile () {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+

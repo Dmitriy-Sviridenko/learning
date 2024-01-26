@@ -47,26 +47,32 @@
           </li>
         </ul>
 
-        <div class="cart">
-          <a href="#!">
-            <img class="cart__img" src="./img/icons/cart.svg" alt="">
-            <div class="cart_count">0</div>
-          </a>
-        </div>
+        <a class="cart" href="#!">
+          <img class="cart__img" src="./img/icons/cart.svg" alt="">
+          <div class="cart_count">0</div>
+        </a>
+
+        <button id="open-mobile-nav-btn" class="nav__btn"><img src="./img/icons/mobile-nav.svg" alt="open navigation"></button>
       </nav>
 
       <div class="header__content">
         <h1 class="header__title">  Make your interior more minimalistic & modern</h1>
         <p>Turn your room with panto into a lot more minimalist and modern with ease and speed</p>
-        <form action="" class="header__search search-form">
-          <input placeholder="Search furniture" type="text" class="search-form__imput" autocomplete="off">
-          <button class="search-form__btn">
-            <img src="./img/icons/search.svg" alt="Search">
-          </button>
-        </form>
+        <div class="header__search">
+          <form action="" class="search-form">
+            <input 
+              placeholder="Search furniture" 
+              type="text" 
+              class="search-form__imput" 
+              autocomplete="off"/>
+            <button class="search-form__btn">
+              <img src="./img/icons/search.svg" alt="Search">
+            </button>
+          </form>
+        </div>
       </div>
 
-      <div class="header__dot header__dot-sofa">
+      <div class="header__dot header__dot--sofa">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -87,7 +93,7 @@
         </div>
       </div>
 
-      <div class="header__dot header__dot-vase">
+      <div class="header__dot header__dot--vase">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -108,7 +114,7 @@
         </div>
       </div>
 
-      <div class="header__dot header__dot-item">
+      <div class="header__dot header__dot--item">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -128,7 +134,7 @@
           </label>
         </div>
       </div>  
-      <div class="header__dot header__dot-wall">
+      <div class="header__dot header__dot--wall">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -551,6 +557,44 @@
       </div>
     </div>
   </footer>
+
+  <div class="mobile-nav-wrapper">
+
+    <div class="mobile-nav__header">
+      <a href="#cart" class="mobile-cart">
+        <div class="cart">
+          <img class="cart__img" src="./img/icons/cart.svg" alt="">
+          <div class="cart_count">0</div>
+        </div>
+        Cart
+      </a>
+      
+      <button id="close-mobile-nav-btn" class="mobile-nav-btn-close">
+        <img src="./img/icons/close.svg" alt="close navigation">
+      </button>
+    </div>
+
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link mobile-nav__link--dropdown">Furniture</a>
+        <ul class="mobile-sub-nav">
+          <li class="mobile-sub-nav__item"><a href="" class="mobile-sub-nav__link">Home</a></li>
+          <li class="mobile-sub-nav__item"><a href="" class="mobile-sub-nav__link">Services</a></li>
+          <li class="mobile-sub-nav__item"><a href="" class="mobile-sub-nav__link">Products</a></li>
+          <li class="mobile-sub-nav__item"><a href="" class="mobile-sub-nav__link">Contacts</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link">Shop</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link">About Us</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#!" class="mobile-nav__link">Contact</a>
+      </li>
+    </ul>
+  </div>
   
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
